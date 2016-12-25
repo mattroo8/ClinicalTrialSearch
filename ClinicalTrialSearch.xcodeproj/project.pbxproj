@@ -1,0 +1,539 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		28724FDA1E1079D100496506 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 28724FD91E1079D100496506 /* main.m */; };
+		28724FDD1E1079D100496506 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28724FDC1E1079D100496506 /* AppDelegate.m */; };
+		28724FE01E1079D100496506 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28724FDF1E1079D100496506 /* ViewController.m */; };
+		28724FE31E1079D100496506 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28724FE11E1079D100496506 /* Main.storyboard */; };
+		28724FE51E1079D100496506 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28724FE41E1079D100496506 /* Assets.xcassets */; };
+		28724FE81E1079D100496506 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28724FE61E1079D100496506 /* LaunchScreen.storyboard */; };
+		28724FF31E1079D200496506 /* ClinicalTrialSearchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 28724FF21E1079D200496506 /* ClinicalTrialSearchTests.m */; };
+		28724FFE1E1079D200496506 /* ClinicalTrialSearchUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 28724FFD1E1079D200496506 /* ClinicalTrialSearchUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		28724FEF1E1079D200496506 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 28724FCD1E1079D100496506 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 28724FD41E1079D100496506;
+			remoteInfo = ClinicalTrialSearch;
+		};
+		28724FFA1E1079D200496506 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 28724FCD1E1079D100496506 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 28724FD41E1079D100496506;
+			remoteInfo = ClinicalTrialSearch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		28724FD51E1079D100496506 /* ClinicalTrialSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClinicalTrialSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		28724FD91E1079D100496506 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		28724FDB1E1079D100496506 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		28724FDC1E1079D100496506 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		28724FDE1E1079D100496506 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		28724FDF1E1079D100496506 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		28724FE21E1079D100496506 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		28724FE41E1079D100496506 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		28724FE71E1079D100496506 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		28724FE91E1079D100496506 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28724FEE1E1079D200496506 /* ClinicalTrialSearchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClinicalTrialSearchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		28724FF21E1079D200496506 /* ClinicalTrialSearchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClinicalTrialSearchTests.m; sourceTree = "<group>"; };
+		28724FF41E1079D200496506 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28724FF91E1079D200496506 /* ClinicalTrialSearchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClinicalTrialSearchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		28724FFD1E1079D200496506 /* ClinicalTrialSearchUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClinicalTrialSearchUITests.m; sourceTree = "<group>"; };
+		28724FFF1E1079D200496506 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		28724FD21E1079D100496506 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28724FEB1E1079D200496506 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28724FF61E1079D200496506 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		28724FCC1E1079D100496506 = {
+			isa = PBXGroup;
+			children = (
+				28724FD71E1079D100496506 /* ClinicalTrialSearch */,
+				28724FF11E1079D200496506 /* ClinicalTrialSearchTests */,
+				28724FFC1E1079D200496506 /* ClinicalTrialSearchUITests */,
+				28724FD61E1079D100496506 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		28724FD61E1079D100496506 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				28724FD51E1079D100496506 /* ClinicalTrialSearch.app */,
+				28724FEE1E1079D200496506 /* ClinicalTrialSearchTests.xctest */,
+				28724FF91E1079D200496506 /* ClinicalTrialSearchUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		28724FD71E1079D100496506 /* ClinicalTrialSearch */ = {
+			isa = PBXGroup;
+			children = (
+				28724FDB1E1079D100496506 /* AppDelegate.h */,
+				28724FDC1E1079D100496506 /* AppDelegate.m */,
+				28724FDE1E1079D100496506 /* ViewController.h */,
+				28724FDF1E1079D100496506 /* ViewController.m */,
+				28724FE11E1079D100496506 /* Main.storyboard */,
+				28724FE41E1079D100496506 /* Assets.xcassets */,
+				28724FE61E1079D100496506 /* LaunchScreen.storyboard */,
+				28724FE91E1079D100496506 /* Info.plist */,
+				28724FD81E1079D100496506 /* Supporting Files */,
+			);
+			path = ClinicalTrialSearch;
+			sourceTree = "<group>";
+		};
+		28724FD81E1079D100496506 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				28724FD91E1079D100496506 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		28724FF11E1079D200496506 /* ClinicalTrialSearchTests */ = {
+			isa = PBXGroup;
+			children = (
+				28724FF21E1079D200496506 /* ClinicalTrialSearchTests.m */,
+				28724FF41E1079D200496506 /* Info.plist */,
+			);
+			path = ClinicalTrialSearchTests;
+			sourceTree = "<group>";
+		};
+		28724FFC1E1079D200496506 /* ClinicalTrialSearchUITests */ = {
+			isa = PBXGroup;
+			children = (
+				28724FFD1E1079D200496506 /* ClinicalTrialSearchUITests.m */,
+				28724FFF1E1079D200496506 /* Info.plist */,
+			);
+			path = ClinicalTrialSearchUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		28724FD41E1079D100496506 /* ClinicalTrialSearch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 287250021E1079D200496506 /* Build configuration list for PBXNativeTarget "ClinicalTrialSearch" */;
+			buildPhases = (
+				28724FD11E1079D100496506 /* Sources */,
+				28724FD21E1079D100496506 /* Frameworks */,
+				28724FD31E1079D100496506 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ClinicalTrialSearch;
+			productName = ClinicalTrialSearch;
+			productReference = 28724FD51E1079D100496506 /* ClinicalTrialSearch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		28724FED1E1079D200496506 /* ClinicalTrialSearchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 287250051E1079D200496506 /* Build configuration list for PBXNativeTarget "ClinicalTrialSearchTests" */;
+			buildPhases = (
+				28724FEA1E1079D200496506 /* Sources */,
+				28724FEB1E1079D200496506 /* Frameworks */,
+				28724FEC1E1079D200496506 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				28724FF01E1079D200496506 /* PBXTargetDependency */,
+			);
+			name = ClinicalTrialSearchTests;
+			productName = ClinicalTrialSearchTests;
+			productReference = 28724FEE1E1079D200496506 /* ClinicalTrialSearchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		28724FF81E1079D200496506 /* ClinicalTrialSearchUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 287250081E1079D200496506 /* Build configuration list for PBXNativeTarget "ClinicalTrialSearchUITests" */;
+			buildPhases = (
+				28724FF51E1079D200496506 /* Sources */,
+				28724FF61E1079D200496506 /* Frameworks */,
+				28724FF71E1079D200496506 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				28724FFB1E1079D200496506 /* PBXTargetDependency */,
+			);
+			name = ClinicalTrialSearchUITests;
+			productName = ClinicalTrialSearchUITests;
+			productReference = 28724FF91E1079D200496506 /* ClinicalTrialSearchUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		28724FCD1E1079D100496506 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "matt rooney";
+				TargetAttributes = {
+					28724FD41E1079D100496506 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 3VA9LD8KWM;
+						ProvisioningStyle = Automatic;
+					};
+					28724FED1E1079D200496506 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 3VA9LD8KWM;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 28724FD41E1079D100496506;
+					};
+					28724FF81E1079D200496506 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 3VA9LD8KWM;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 28724FD41E1079D100496506;
+					};
+				};
+			};
+			buildConfigurationList = 28724FD01E1079D100496506 /* Build configuration list for PBXProject "ClinicalTrialSearch" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 28724FCC1E1079D100496506;
+			productRefGroup = 28724FD61E1079D100496506 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				28724FD41E1079D100496506 /* ClinicalTrialSearch */,
+				28724FED1E1079D200496506 /* ClinicalTrialSearchTests */,
+				28724FF81E1079D200496506 /* ClinicalTrialSearchUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		28724FD31E1079D100496506 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28724FE81E1079D100496506 /* LaunchScreen.storyboard in Resources */,
+				28724FE51E1079D100496506 /* Assets.xcassets in Resources */,
+				28724FE31E1079D100496506 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28724FEC1E1079D200496506 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28724FF71E1079D200496506 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		28724FD11E1079D100496506 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28724FE01E1079D100496506 /* ViewController.m in Sources */,
+				28724FDD1E1079D100496506 /* AppDelegate.m in Sources */,
+				28724FDA1E1079D100496506 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28724FEA1E1079D200496506 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28724FF31E1079D200496506 /* ClinicalTrialSearchTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28724FF51E1079D200496506 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28724FFE1E1079D200496506 /* ClinicalTrialSearchUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		28724FF01E1079D200496506 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 28724FD41E1079D100496506 /* ClinicalTrialSearch */;
+			targetProxy = 28724FEF1E1079D200496506 /* PBXContainerItemProxy */;
+		};
+		28724FFB1E1079D200496506 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 28724FD41E1079D100496506 /* ClinicalTrialSearch */;
+			targetProxy = 28724FFA1E1079D200496506 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		28724FE11E1079D100496506 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				28724FE21E1079D100496506 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		28724FE61E1079D100496506 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				28724FE71E1079D100496506 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		287250001E1079D200496506 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		287250011E1079D200496506 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		287250031E1079D200496506 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3VA9LD8KWM;
+				INFOPLIST_FILE = ClinicalTrialSearch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mroodev.ClinicalTrialSearch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		287250041E1079D200496506 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3VA9LD8KWM;
+				INFOPLIST_FILE = ClinicalTrialSearch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mroodev.ClinicalTrialSearch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		287250061E1079D200496506 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 3VA9LD8KWM;
+				INFOPLIST_FILE = ClinicalTrialSearchTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mroodev.ClinicalTrialSearchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ClinicalTrialSearch.app/ClinicalTrialSearch";
+			};
+			name = Debug;
+		};
+		287250071E1079D200496506 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 3VA9LD8KWM;
+				INFOPLIST_FILE = ClinicalTrialSearchTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mroodev.ClinicalTrialSearchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ClinicalTrialSearch.app/ClinicalTrialSearch";
+			};
+			name = Release;
+		};
+		287250091E1079D200496506 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 3VA9LD8KWM;
+				INFOPLIST_FILE = ClinicalTrialSearchUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mroodev.ClinicalTrialSearchUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ClinicalTrialSearch;
+			};
+			name = Debug;
+		};
+		2872500A1E1079D200496506 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 3VA9LD8KWM;
+				INFOPLIST_FILE = ClinicalTrialSearchUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mroodev.ClinicalTrialSearchUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ClinicalTrialSearch;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		28724FD01E1079D100496506 /* Build configuration list for PBXProject "ClinicalTrialSearch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				287250001E1079D200496506 /* Debug */,
+				287250011E1079D200496506 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		287250021E1079D200496506 /* Build configuration list for PBXNativeTarget "ClinicalTrialSearch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				287250031E1079D200496506 /* Debug */,
+				287250041E1079D200496506 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		287250051E1079D200496506 /* Build configuration list for PBXNativeTarget "ClinicalTrialSearchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				287250061E1079D200496506 /* Debug */,
+				287250071E1079D200496506 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		287250081E1079D200496506 /* Build configuration list for PBXNativeTarget "ClinicalTrialSearchUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				287250091E1079D200496506 /* Debug */,
+				2872500A1E1079D200496506 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 28724FCD1E1079D100496506 /* Project object */;
+}
