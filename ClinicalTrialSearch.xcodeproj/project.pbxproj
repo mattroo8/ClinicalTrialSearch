@@ -67,23 +67,23 @@
 		287250131E107C2100496506 /* Disease.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Disease.h; path = Models/Disease.h; sourceTree = "<group>"; };
 		287250141E107C2100496506 /* Disease.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Disease.m; path = Models/Disease.m; sourceTree = "<group>"; };
 		2872501C1E1099C300496506 /* DiseaseDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DiseaseDetailViewController.xib; sourceTree = "<group>"; };
-		2872501F1E10A22200496506 /* DiseaseDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiseaseDetailViewController.h; sourceTree = "<group>"; };
-		287250201E10A22200496506 /* DiseaseDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiseaseDetailViewController.m; sourceTree = "<group>"; };
-		287250211E10A22200496506 /* DiseaseSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiseaseSearchViewController.h; sourceTree = "<group>"; };
-		287250221E10A22200496506 /* DiseaseSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiseaseSearchViewController.m; sourceTree = "<group>"; };
-		287250251E10A6FA00496506 /* DiseaseDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiseaseDetail.h; sourceTree = "<group>"; };
-		287250261E10A6FA00496506 /* DiseaseDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiseaseDetail.m; sourceTree = "<group>"; };
-		287250281E10B33E00496506 /* Mesh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mesh.h; sourceTree = "<group>"; };
-		287250291E10B33E00496506 /* Mesh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mesh.m; sourceTree = "<group>"; };
-		2872502B1E1123B000496506 /* clinical_trial_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clinical_trial_small.png; sourceTree = "<group>"; };
-		2872502C1E1123B000496506 /* medicine_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = medicine_small.png; sourceTree = "<group>"; };
-		2872502F1E11283100496506 /* disease_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = disease_small.png; sourceTree = "<group>"; };
-		287250311E11305D00496506 /* MedicalTrial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MedicalTrial.h; sourceTree = "<group>"; };
-		287250321E11305D00496506 /* MedicalTrial.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MedicalTrial.m; sourceTree = "<group>"; };
-		287250341E115CED00496506 /* MedicalTrialDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MedicalTrialDetail.h; sourceTree = "<group>"; };
-		287250351E115CED00496506 /* MedicalTrialDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MedicalTrialDetail.m; sourceTree = "<group>"; };
-		287250371E1162C000496506 /* MedicalTrialDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MedicalTrialDetailViewController.h; sourceTree = "<group>"; };
-		287250381E1162C000496506 /* MedicalTrialDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MedicalTrialDetailViewController.m; sourceTree = "<group>"; };
+		2872501F1E10A22200496506 /* DiseaseDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DiseaseDetailViewController.h; path = Controllers/DiseaseDetailViewController.h; sourceTree = "<group>"; };
+		287250201E10A22200496506 /* DiseaseDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DiseaseDetailViewController.m; path = Controllers/DiseaseDetailViewController.m; sourceTree = "<group>"; };
+		287250211E10A22200496506 /* DiseaseSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DiseaseSearchViewController.h; path = Controllers/DiseaseSearchViewController.h; sourceTree = "<group>"; };
+		287250221E10A22200496506 /* DiseaseSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DiseaseSearchViewController.m; path = Controllers/DiseaseSearchViewController.m; sourceTree = "<group>"; };
+		287250251E10A6FA00496506 /* DiseaseDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DiseaseDetail.h; path = Models/DiseaseDetail.h; sourceTree = "<group>"; };
+		287250261E10A6FA00496506 /* DiseaseDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DiseaseDetail.m; path = Models/DiseaseDetail.m; sourceTree = "<group>"; };
+		287250281E10B33E00496506 /* Mesh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Mesh.h; path = Models/Mesh.h; sourceTree = "<group>"; };
+		287250291E10B33E00496506 /* Mesh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Mesh.m; path = Models/Mesh.m; sourceTree = "<group>"; };
+		2872502B1E1123B000496506 /* clinical_trial_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = clinical_trial_small.png; path = Images/clinical_trial_small.png; sourceTree = "<group>"; };
+		2872502C1E1123B000496506 /* medicine_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = medicine_small.png; path = Images/medicine_small.png; sourceTree = "<group>"; };
+		2872502F1E11283100496506 /* disease_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = disease_small.png; path = Images/disease_small.png; sourceTree = "<group>"; };
+		287250311E11305D00496506 /* MedicalTrial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MedicalTrial.h; path = Models/MedicalTrial.h; sourceTree = "<group>"; };
+		287250321E11305D00496506 /* MedicalTrial.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MedicalTrial.m; path = Models/MedicalTrial.m; sourceTree = "<group>"; };
+		287250341E115CED00496506 /* MedicalTrialDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MedicalTrialDetail.h; path = Models/MedicalTrialDetail.h; sourceTree = "<group>"; };
+		287250351E115CED00496506 /* MedicalTrialDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MedicalTrialDetail.m; path = Models/MedicalTrialDetail.m; sourceTree = "<group>"; };
+		287250371E1162C000496506 /* MedicalTrialDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MedicalTrialDetailViewController.h; path = Controllers/MedicalTrialDetailViewController.h; sourceTree = "<group>"; };
+		287250381E1162C000496506 /* MedicalTrialDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MedicalTrialDetailViewController.m; path = Controllers/MedicalTrialDetailViewController.m; sourceTree = "<group>"; };
 		287250391E1162C000496506 /* MedicalTrialDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MedicalTrialDetailViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -135,11 +135,7 @@
 		28724FD71E1079D100496506 /* ClinicalTrialSearch */ = {
 			isa = PBXGroup;
 			children = (
-				2872502F1E11283100496506 /* disease_small.png */,
-				2872501F1E10A22200496506 /* DiseaseDetailViewController.h */,
-				287250201E10A22200496506 /* DiseaseDetailViewController.m */,
-				287250211E10A22200496506 /* DiseaseSearchViewController.h */,
-				287250221E10A22200496506 /* DiseaseSearchViewController.m */,
+				2872503C1E128A4E00496506 /* Controllers */,
 				287250191E10996900496506 /* HTTP */,
 				287250181E10995C00496506 /* Models */,
 				287250171E10981500496506 /* Views */,
@@ -149,9 +145,6 @@
 				28724FE61E1079D100496506 /* LaunchScreen.storyboard */,
 				28724FE91E1079D100496506 /* Info.plist */,
 				28724FD81E1079D100496506 /* Supporting Files */,
-				287250371E1162C000496506 /* MedicalTrialDetailViewController.h */,
-				287250381E1162C000496506 /* MedicalTrialDetailViewController.m */,
-				287250391E1162C000496506 /* MedicalTrialDetailViewController.xib */,
 			);
 			path = ClinicalTrialSearch;
 			sourceTree = "<group>";
@@ -159,6 +152,7 @@
 		28724FD81E1079D100496506 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2872502F1E11283100496506 /* disease_small.png */,
 				2872502B1E1123B000496506 /* clinical_trial_small.png */,
 				2872502C1E1123B000496506 /* medicine_small.png */,
 				28724FD91E1079D100496506 /* main.m */,
@@ -187,6 +181,7 @@
 		287250171E10981500496506 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				287250391E1162C000496506 /* MedicalTrialDetailViewController.xib */,
 				2872501C1E1099C300496506 /* DiseaseDetailViewController.xib */,
 				2872500D1E107A3600496506 /* DiseaseSearchViewController.xib */,
 			);
@@ -217,6 +212,19 @@
 				287250111E107B8500496506 /* HTTPSearchDiseases.m */,
 			);
 			name = HTTP;
+			sourceTree = "<group>";
+		};
+		2872503C1E128A4E00496506 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2872501F1E10A22200496506 /* DiseaseDetailViewController.h */,
+				287250201E10A22200496506 /* DiseaseDetailViewController.m */,
+				287250211E10A22200496506 /* DiseaseSearchViewController.h */,
+				287250221E10A22200496506 /* DiseaseSearchViewController.m */,
+				287250371E1162C000496506 /* MedicalTrialDetailViewController.h */,
+				287250381E1162C000496506 /* MedicalTrialDetailViewController.m */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
