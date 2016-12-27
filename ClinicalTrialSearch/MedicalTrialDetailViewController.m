@@ -7,6 +7,7 @@
 //
 
 #import "MedicalTrialDetailViewController.h"
+#import "HTTPSearchDiseases.h"
 
 @interface MedicalTrialDetailViewController ()
 
@@ -17,6 +18,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(trialDetailReceived:) name:@"trialDetailReceived" object:nil];
+    self.edgesForExtendedLayout = UIRectEdgeNone;
+}
+
+-(void)viewWillAppear:(BOOL)animated
+{
+    [HTTPSearchDiseases searchMedicalTrialDetail:_trial.id];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -24,14 +32,22 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+-(void)trialDetailReceived:(NSNotification *)notif
+{
+    dispatch_async (dispatch_get_main_queue(), ^{
+        NSMutableDictionary *dict = [NSMutableDictionary new];
+        dict = notif.object;
+        _trial.detail = [dict objectForKey:@"detail"];
+        [self setTextViewTextAndStopLoading:_trial.detail];
+    });
 }
-*/
+
+-(void)setTextViewTextAndStopLoading:(MedicalTrialDetail *)trialDetail {
+    _titleLabel.text = trialDetail.name;
+    [_summaryTextView setValue:trialDetail.summary forKey:@"contentToHTMLString"];
+    [_descriptionTextView setValue:trialDetail.desc forKey:@"contentToHTMLString"];
+//    [_spinner stopAnimating];
+//    _spinner.hidden = YES;
+}
 
 @end

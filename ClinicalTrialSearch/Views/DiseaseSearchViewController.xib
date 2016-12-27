@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DiseaseSearchViewController">
+            <connections>
+                <outlet property="searchBar" destination="Sun-yZ-zLG" id="qdX-Tt-1AI"/>
+                <outlet property="spinner" destination="S5w-hf-YUv" id="agM-pc-DQI"/>
+                <outlet property="tableView" destination="PIx-BV-fTX" id="LyC-G3-PS5"/>
+                <outlet property="toolBar" destination="U0o-mB-caH" id="cDs-IR-INT"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="Sun-yZ-zLG">
+                    <rect key="frame" x="0.0" y="62" width="375" height="44"/>
+                    <textInputTraits key="textInputTraits"/>
+                </searchBar>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="PIx-BV-fTX">
+                    <rect key="frame" x="0.0" y="106" width="375" height="517"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U0o-mB-caH">
+                    <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                    <items/>
+                </toolbar>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="S5w-hf-YUv">
+                    <rect key="frame" x="169" y="315.5" width="37" height="37"/>
+                    <color key="color" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                </activityIndicatorView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="S5w-hf-YUv" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="1Ze-gB-pzW"/>
+                <constraint firstItem="PIx-BV-fTX" firstAttribute="top" secondItem="Sun-yZ-zLG" secondAttribute="bottom" id="4Tp-Gw-niA"/>
+                <constraint firstAttribute="trailing" secondItem="Sun-yZ-zLG" secondAttribute="trailing" id="77F-3k-mS5"/>
+                <constraint firstItem="U0o-mB-caH" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="8ja-ws-ASk"/>
+                <constraint firstItem="U0o-mB-caH" firstAttribute="top" secondItem="PIx-BV-fTX" secondAttribute="bottom" id="H1S-4D-hiD"/>
+                <constraint firstAttribute="trailing" secondItem="PIx-BV-fTX" secondAttribute="trailing" id="HVL-wd-1tS"/>
+                <constraint firstAttribute="trailing" secondItem="U0o-mB-caH" secondAttribute="trailing" id="SCT-bR-1xk"/>
+                <constraint firstItem="Sun-yZ-zLG" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="gfH-By-TBO"/>
+                <constraint firstItem="PIx-BV-fTX" firstAttribute="top" secondItem="Sun-yZ-zLG" secondAttribute="bottom" id="hm0-xe-cBn"/>
+                <constraint firstItem="Sun-yZ-zLG" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="62" id="jlo-L5-lpc"/>
+                <constraint firstItem="PIx-BV-fTX" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="lRt-hl-NZN"/>
+                <constraint firstItem="U0o-mB-caH" firstAttribute="top" secondItem="PIx-BV-fTX" secondAttribute="bottom" id="lcL-aG-HZr"/>
+                <constraint firstAttribute="bottom" secondItem="U0o-mB-caH" secondAttribute="bottom" id="oi0-mB-ZJf"/>
+                <constraint firstItem="S5w-hf-YUv" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="uLR-Pt-uGk"/>
+            </constraints>
+            <point key="canvasLocation" x="33.5" y="83.5"/>
+        </view>
+    </objects>
+</document>
