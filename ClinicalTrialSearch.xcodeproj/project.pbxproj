@@ -9,12 +9,25 @@
 /* Begin PBXBuildFile section */
 		28724FDA1E1079D100496506 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 28724FD91E1079D100496506 /* main.m */; };
 		28724FDD1E1079D100496506 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28724FDC1E1079D100496506 /* AppDelegate.m */; };
-		28724FE01E1079D100496506 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28724FDF1E1079D100496506 /* ViewController.m */; };
-		28724FE31E1079D100496506 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28724FE11E1079D100496506 /* Main.storyboard */; };
 		28724FE51E1079D100496506 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28724FE41E1079D100496506 /* Assets.xcassets */; };
 		28724FE81E1079D100496506 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28724FE61E1079D100496506 /* LaunchScreen.storyboard */; };
 		28724FF31E1079D200496506 /* ClinicalTrialSearchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 28724FF21E1079D200496506 /* ClinicalTrialSearchTests.m */; };
 		28724FFE1E1079D200496506 /* ClinicalTrialSearchUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 28724FFD1E1079D200496506 /* ClinicalTrialSearchUITests.m */; };
+		2872500F1E107A3600496506 /* DiseaseSearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2872500D1E107A3600496506 /* DiseaseSearchViewController.xib */; };
+		287250121E107B8500496506 /* HTTPSearchDiseases.m in Sources */ = {isa = PBXBuildFile; fileRef = 287250111E107B8500496506 /* HTTPSearchDiseases.m */; };
+		287250151E107C2100496506 /* Disease.m in Sources */ = {isa = PBXBuildFile; fileRef = 287250141E107C2100496506 /* Disease.m */; };
+		2872501E1E1099C300496506 /* DiseaseDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2872501C1E1099C300496506 /* DiseaseDetailViewController.xib */; };
+		287250231E10A22200496506 /* DiseaseDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 287250201E10A22200496506 /* DiseaseDetailViewController.m */; };
+		287250241E10A22200496506 /* DiseaseSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 287250221E10A22200496506 /* DiseaseSearchViewController.m */; };
+		287250271E10A6FA00496506 /* DiseaseDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = 287250261E10A6FA00496506 /* DiseaseDetail.m */; };
+		2872502A1E10B33E00496506 /* Mesh.m in Sources */ = {isa = PBXBuildFile; fileRef = 287250291E10B33E00496506 /* Mesh.m */; };
+		2872502D1E1123B000496506 /* clinical_trial_small.png in Resources */ = {isa = PBXBuildFile; fileRef = 2872502B1E1123B000496506 /* clinical_trial_small.png */; };
+		2872502E1E1123B000496506 /* medicine_small.png in Resources */ = {isa = PBXBuildFile; fileRef = 2872502C1E1123B000496506 /* medicine_small.png */; };
+		287250301E11283100496506 /* disease_small.png in Resources */ = {isa = PBXBuildFile; fileRef = 2872502F1E11283100496506 /* disease_small.png */; };
+		287250331E11305D00496506 /* MedicalTrial.m in Sources */ = {isa = PBXBuildFile; fileRef = 287250321E11305D00496506 /* MedicalTrial.m */; };
+		287250361E115CED00496506 /* MedicalTrialDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = 287250351E115CED00496506 /* MedicalTrialDetail.m */; };
+		2872503A1E1162C000496506 /* MedicalTrialDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 287250381E1162C000496506 /* MedicalTrialDetailViewController.m */; };
+		2872503B1E1162C000496506 /* MedicalTrialDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 287250391E1162C000496506 /* MedicalTrialDetailViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,9 +52,6 @@
 		28724FD91E1079D100496506 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		28724FDB1E1079D100496506 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		28724FDC1E1079D100496506 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		28724FDE1E1079D100496506 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		28724FDF1E1079D100496506 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		28724FE21E1079D100496506 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		28724FE41E1079D100496506 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		28724FE71E1079D100496506 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		28724FE91E1079D100496506 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,6 +61,30 @@
 		28724FF91E1079D200496506 /* ClinicalTrialSearchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClinicalTrialSearchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		28724FFD1E1079D200496506 /* ClinicalTrialSearchUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClinicalTrialSearchUITests.m; sourceTree = "<group>"; };
 		28724FFF1E1079D200496506 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2872500D1E107A3600496506 /* DiseaseSearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DiseaseSearchViewController.xib; sourceTree = "<group>"; };
+		287250101E107B8500496506 /* HTTPSearchDiseases.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HTTPSearchDiseases.h; path = HTTP/HTTPSearchDiseases.h; sourceTree = "<group>"; };
+		287250111E107B8500496506 /* HTTPSearchDiseases.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HTTPSearchDiseases.m; path = HTTP/HTTPSearchDiseases.m; sourceTree = "<group>"; };
+		287250131E107C2100496506 /* Disease.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Disease.h; path = Models/Disease.h; sourceTree = "<group>"; };
+		287250141E107C2100496506 /* Disease.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Disease.m; path = Models/Disease.m; sourceTree = "<group>"; };
+		2872501C1E1099C300496506 /* DiseaseDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DiseaseDetailViewController.xib; sourceTree = "<group>"; };
+		2872501F1E10A22200496506 /* DiseaseDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiseaseDetailViewController.h; sourceTree = "<group>"; };
+		287250201E10A22200496506 /* DiseaseDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiseaseDetailViewController.m; sourceTree = "<group>"; };
+		287250211E10A22200496506 /* DiseaseSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiseaseSearchViewController.h; sourceTree = "<group>"; };
+		287250221E10A22200496506 /* DiseaseSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiseaseSearchViewController.m; sourceTree = "<group>"; };
+		287250251E10A6FA00496506 /* DiseaseDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiseaseDetail.h; sourceTree = "<group>"; };
+		287250261E10A6FA00496506 /* DiseaseDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiseaseDetail.m; sourceTree = "<group>"; };
+		287250281E10B33E00496506 /* Mesh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mesh.h; sourceTree = "<group>"; };
+		287250291E10B33E00496506 /* Mesh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mesh.m; sourceTree = "<group>"; };
+		2872502B1E1123B000496506 /* clinical_trial_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clinical_trial_small.png; sourceTree = "<group>"; };
+		2872502C1E1123B000496506 /* medicine_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = medicine_small.png; sourceTree = "<group>"; };
+		2872502F1E11283100496506 /* disease_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = disease_small.png; sourceTree = "<group>"; };
+		287250311E11305D00496506 /* MedicalTrial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MedicalTrial.h; sourceTree = "<group>"; };
+		287250321E11305D00496506 /* MedicalTrial.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MedicalTrial.m; sourceTree = "<group>"; };
+		287250341E115CED00496506 /* MedicalTrialDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MedicalTrialDetail.h; sourceTree = "<group>"; };
+		287250351E115CED00496506 /* MedicalTrialDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MedicalTrialDetail.m; sourceTree = "<group>"; };
+		287250371E1162C000496506 /* MedicalTrialDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MedicalTrialDetailViewController.h; sourceTree = "<group>"; };
+		287250381E1162C000496506 /* MedicalTrialDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MedicalTrialDetailViewController.m; sourceTree = "<group>"; };
+		287250391E1162C000496506 /* MedicalTrialDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MedicalTrialDetailViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,15 +135,23 @@
 		28724FD71E1079D100496506 /* ClinicalTrialSearch */ = {
 			isa = PBXGroup;
 			children = (
+				2872502F1E11283100496506 /* disease_small.png */,
+				2872501F1E10A22200496506 /* DiseaseDetailViewController.h */,
+				287250201E10A22200496506 /* DiseaseDetailViewController.m */,
+				287250211E10A22200496506 /* DiseaseSearchViewController.h */,
+				287250221E10A22200496506 /* DiseaseSearchViewController.m */,
+				287250191E10996900496506 /* HTTP */,
+				287250181E10995C00496506 /* Models */,
+				287250171E10981500496506 /* Views */,
 				28724FDB1E1079D100496506 /* AppDelegate.h */,
 				28724FDC1E1079D100496506 /* AppDelegate.m */,
-				28724FDE1E1079D100496506 /* ViewController.h */,
-				28724FDF1E1079D100496506 /* ViewController.m */,
-				28724FE11E1079D100496506 /* Main.storyboard */,
 				28724FE41E1079D100496506 /* Assets.xcassets */,
 				28724FE61E1079D100496506 /* LaunchScreen.storyboard */,
 				28724FE91E1079D100496506 /* Info.plist */,
 				28724FD81E1079D100496506 /* Supporting Files */,
+				287250371E1162C000496506 /* MedicalTrialDetailViewController.h */,
+				287250381E1162C000496506 /* MedicalTrialDetailViewController.m */,
+				287250391E1162C000496506 /* MedicalTrialDetailViewController.xib */,
 			);
 			path = ClinicalTrialSearch;
 			sourceTree = "<group>";
@@ -117,6 +159,8 @@
 		28724FD81E1079D100496506 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2872502B1E1123B000496506 /* clinical_trial_small.png */,
+				2872502C1E1123B000496506 /* medicine_small.png */,
 				28724FD91E1079D100496506 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -138,6 +182,41 @@
 				28724FFF1E1079D200496506 /* Info.plist */,
 			);
 			path = ClinicalTrialSearchUITests;
+			sourceTree = "<group>";
+		};
+		287250171E10981500496506 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2872501C1E1099C300496506 /* DiseaseDetailViewController.xib */,
+				2872500D1E107A3600496506 /* DiseaseSearchViewController.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		287250181E10995C00496506 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				287250131E107C2100496506 /* Disease.h */,
+				287250141E107C2100496506 /* Disease.m */,
+				287250251E10A6FA00496506 /* DiseaseDetail.h */,
+				287250261E10A6FA00496506 /* DiseaseDetail.m */,
+				287250281E10B33E00496506 /* Mesh.h */,
+				287250291E10B33E00496506 /* Mesh.m */,
+				287250311E11305D00496506 /* MedicalTrial.h */,
+				287250321E11305D00496506 /* MedicalTrial.m */,
+				287250341E115CED00496506 /* MedicalTrialDetail.h */,
+				287250351E115CED00496506 /* MedicalTrialDetail.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		287250191E10996900496506 /* HTTP */ = {
+			isa = PBXGroup;
+			children = (
+				287250101E107B8500496506 /* HTTPSearchDiseases.h */,
+				287250111E107B8500496506 /* HTTPSearchDiseases.m */,
+			);
+			name = HTTP;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,9 +328,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2872501E1E1099C300496506 /* DiseaseDetailViewController.xib in Resources */,
 				28724FE81E1079D100496506 /* LaunchScreen.storyboard in Resources */,
+				2872503B1E1162C000496506 /* MedicalTrialDetailViewController.xib in Resources */,
+				287250301E11283100496506 /* disease_small.png in Resources */,
 				28724FE51E1079D100496506 /* Assets.xcassets in Resources */,
-				28724FE31E1079D100496506 /* Main.storyboard in Resources */,
+				2872500F1E107A3600496506 /* DiseaseSearchViewController.xib in Resources */,
+				2872502D1E1123B000496506 /* clinical_trial_small.png in Resources */,
+				2872502E1E1123B000496506 /* medicine_small.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,8 +360,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28724FE01E1079D100496506 /* ViewController.m in Sources */,
 				28724FDD1E1079D100496506 /* AppDelegate.m in Sources */,
+				287250241E10A22200496506 /* DiseaseSearchViewController.m in Sources */,
+				287250121E107B8500496506 /* HTTPSearchDiseases.m in Sources */,
+				287250361E115CED00496506 /* MedicalTrialDetail.m in Sources */,
+				287250331E11305D00496506 /* MedicalTrial.m in Sources */,
+				287250271E10A6FA00496506 /* DiseaseDetail.m in Sources */,
+				287250151E107C2100496506 /* Disease.m in Sources */,
+				287250231E10A22200496506 /* DiseaseDetailViewController.m in Sources */,
+				2872503A1E1162C000496506 /* MedicalTrialDetailViewController.m in Sources */,
+				2872502A1E10B33E00496506 /* Mesh.m in Sources */,
 				28724FDA1E1079D100496506 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -314,14 +406,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		28724FE11E1079D100496506 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				28724FE21E1079D100496506 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		28724FE61E1079D100496506 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -516,6 +600,7 @@
 				287250041E1079D200496506 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		287250051E1079D200496506 /* Build configuration list for PBXNativeTarget "ClinicalTrialSearchTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +609,7 @@
 				287250071E1079D200496506 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		287250081E1079D200496506 /* Build configuration list for PBXNativeTarget "ClinicalTrialSearchUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +618,7 @@
 				2872500A1E1079D200496506 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

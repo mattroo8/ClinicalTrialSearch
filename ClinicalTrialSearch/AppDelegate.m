@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "DiseaseSearchViewController.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +17,14 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    [self.window makeKeyAndVisible];
+    UINavigationController *navVC = [UINavigationController new];
+    navVC.view.backgroundColor = [UIColor whiteColor];
+    [self.window setRootViewController:navVC];
+    DiseaseSearchViewController *dsvc = [DiseaseSearchViewController new];
+    dsvc.title = @"Disease Lookup";
+    [navVC pushViewController:dsvc animated:YES];
     return YES;
 }
 
