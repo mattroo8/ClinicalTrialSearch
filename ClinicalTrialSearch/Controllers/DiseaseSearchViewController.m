@@ -14,9 +14,12 @@
 #import "MedicalTrialDetailViewController.h"
 
 @interface DiseaseSearchViewController ()
+
 @property (weak, nonatomic) IBOutlet UISearchBar *searchBar;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property BOOL inDiseaseSearch;
+@property (strong, nonatomic) NSTimer *searchTimer;
+
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *spinner;
 
 @end
@@ -106,27 +109,40 @@
 
 - (void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText
 {
-    if(searchText.length>2){
-        [_spinner startAnimating];
-        _spinner.hidden = NO;
-        if(_inDiseaseSearch){
-            [NSObject cancelPreviousPerformRequestsWithTarget:self selector:@selector(searchDisease:) object:searchText];
-            [self performSelector:@selector(searchDisease:) withObject:searchText afterDelay:0.5];
-        } else {
-            [NSObject cancelPreviousPerformRequestsWithTarget:self selector:@selector(searchMedicalTrial:) object:searchText];
-            [self performSelector:@selector(searchMedicalTrial:) withObject:searchText afterDelay:0.5];
+    if(searchText.length == 0){
+        [self clearSearchBarAndTable];
+        return;
+    }
+    if(searchText.length<3){
+        return;
+    }
+    
+    [_spinner startAnimating];
+    _spinner.hidden = NO;
+    
+    if (_searchTimer) {
+        if ([_searchTimer isValid])
+        {
+            [_searchTimer invalidate];
         }
+        _searchTimer = nil;
+    }
+    
+    if(_inDiseaseSearch){
+        _searchTimer = [NSTimer scheduledTimerWithTimeInterval:2.0 target:self selector:@selector(searchDisease:) userInfo:searchText repeats:NO];
+    } else {
+       _searchTimer = [NSTimer scheduledTimerWithTimeInterval:2.0 target:self selector:@selector(searchMedicalTrial:) userInfo:searchText repeats:NO];
     }
 }
 
--(void)searchDisease:(NSString *)disease
+-(void)searchDisease:(NSTimer *)timer
 {
-    [HTTPSearchDiseases searchForDisease:disease];
+    [HTTPSearchDiseases searchForDisease:timer.userInfo];
 }
 
--(void)searchMedicalTrial:(NSString *)medicalTrial
+-(void)searchMedicalTrial:(NSTimer *)timer
 {
-    [HTTPSearchDiseases searchMedicalTrial:medicalTrial];
+    [HTTPSearchDiseases searchMedicalTrial:timer.userInfo];
 }
 
 -(void)diseasesReceieved:(NSNotification *)notification
