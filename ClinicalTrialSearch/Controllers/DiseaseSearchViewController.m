@@ -50,6 +50,8 @@
     _inDiseaseSearch = YES;
     
     _spinner.hidden = YES;
+    
+    self.edgesForExtendedLayout = UIRectEdgeNone;
 }
 
 - (void)didReceiveMemoryWarning {
