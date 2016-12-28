@@ -15,6 +15,5 @@
 @property (strong, nonatomic) Disease *disease;
 @property (strong, nonatomic) MedicalTrial *trial;
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *spinner;
-@property BOOL isDiseaseDetail;
 
 @end

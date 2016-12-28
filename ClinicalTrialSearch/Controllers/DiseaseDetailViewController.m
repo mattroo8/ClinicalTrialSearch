@@ -23,15 +23,11 @@
 
 -(void)viewWillAppear:(BOOL)animated
 {
-    if(_isDiseaseDetail){
-        if(!_disease.detail.diseaseDescription && _disease.detail.diseaseDescription.length==0){
-            [HTTPSearchDiseases getDetailsForDiseaseId:_disease.id];
-            [_spinner startAnimating];
-            _spinner.hidden = NO;
-        } else {
-            [self setTextViewTextAndStopLoading:_disease.detail.diseaseDescription];
-        }
-    } 
+    if(!_disease.detail.diseaseDescription && _disease.detail.diseaseDescription.length==0){
+        [HTTPSearchDiseases getDetailsForDiseaseId:_disease.id];
+        [_spinner startAnimating];
+        _spinner.hidden = NO;
+    }
 }
 
 - (void)didReceiveMemoryWarning {

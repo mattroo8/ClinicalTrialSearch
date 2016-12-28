@@ -86,7 +86,6 @@
     UIViewController *viewToPresent;
     if(_inDiseaseSearch){
         DiseaseDetailViewController *ddvc = [DiseaseDetailViewController new];
-        ddvc.isDiseaseDetail = _inDiseaseSearch;
         Disease *disease = [_diseases objectAtIndex:indexPath.row];
         ddvc.title = disease.name;
         ddvc.disease = disease;
