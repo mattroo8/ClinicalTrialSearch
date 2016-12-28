@@ -14,4 +14,6 @@
 @property (weak, nonatomic) IBOutlet UITextView *descriptionTextView;
 @property (strong, nonatomic) MedicalTrial *trial;
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
+@property (weak, nonatomic) IBOutlet UILabel *outcomeLabel;
+@property (weak, nonatomic) IBOutlet UITextView *outcomeTextView;
 @end

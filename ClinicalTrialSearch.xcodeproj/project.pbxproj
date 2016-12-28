@@ -28,6 +28,7 @@
 		287250361E115CED00496506 /* MedicalTrialDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = 287250351E115CED00496506 /* MedicalTrialDetail.m */; };
 		2872503A1E1162C000496506 /* MedicalTrialDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 287250381E1162C000496506 /* MedicalTrialDetailViewController.m */; };
 		2872503B1E1162C000496506 /* MedicalTrialDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 287250391E1162C000496506 /* MedicalTrialDetailViewController.xib */; };
+		2872503F1E1455FF00496506 /* MedicalTrialOutcome.m in Sources */ = {isa = PBXBuildFile; fileRef = 2872503E1E1455FF00496506 /* MedicalTrialOutcome.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +86,8 @@
 		287250371E1162C000496506 /* MedicalTrialDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MedicalTrialDetailViewController.h; path = Controllers/MedicalTrialDetailViewController.h; sourceTree = "<group>"; };
 		287250381E1162C000496506 /* MedicalTrialDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MedicalTrialDetailViewController.m; path = Controllers/MedicalTrialDetailViewController.m; sourceTree = "<group>"; };
 		287250391E1162C000496506 /* MedicalTrialDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MedicalTrialDetailViewController.xib; sourceTree = "<group>"; };
+		2872503D1E1455FF00496506 /* MedicalTrialOutcome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MedicalTrialOutcome.h; sourceTree = "<group>"; };
+		2872503E1E1455FF00496506 /* MedicalTrialOutcome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MedicalTrialOutcome.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -201,6 +204,8 @@
 				287250321E11305D00496506 /* MedicalTrial.m */,
 				287250341E115CED00496506 /* MedicalTrialDetail.h */,
 				287250351E115CED00496506 /* MedicalTrialDetail.m */,
+				2872503D1E1455FF00496506 /* MedicalTrialOutcome.h */,
+				2872503E1E1455FF00496506 /* MedicalTrialOutcome.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -371,6 +376,7 @@
 				28724FDD1E1079D100496506 /* AppDelegate.m in Sources */,
 				287250241E10A22200496506 /* SearchViewController.m in Sources */,
 				287250121E107B8500496506 /* HTTPSearchDiseases.m in Sources */,
+				2872503F1E1455FF00496506 /* MedicalTrialOutcome.m in Sources */,
 				287250361E115CED00496506 /* MedicalTrialDetail.m in Sources */,
 				287250331E11305D00496506 /* MedicalTrial.m in Sources */,
 				287250271E10A6FA00496506 /* DiseaseDetail.m in Sources */,

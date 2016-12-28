@@ -11,6 +11,7 @@
 #import "DiseaseDetail.h"
 #import "Mesh.h"
 #import "MedicalTrial.h"
+#import "MedicalTrialOutcome.h"
 
 @implementation HTTPSearchDiseases
 
@@ -210,7 +211,16 @@
                                                     detail.name = [diseasesResponse objectForKey:@"title"];
                                                     detail.summary = [diseasesResponse objectForKey:@"summary"];
                                                     detail.desc = [diseasesResponse objectForKey:@"description"];
-
+                                                    detail.outcomes = [NSMutableArray new];
+                                                    for(NSDictionary *outcomeDict in [diseasesResponse objectForKey:@"outcomes"]){
+                                                        MedicalTrialOutcome *outcome = [MedicalTrialOutcome new];
+                                                        outcome.desc = [outcomeDict objectForKey:@"description"];
+                                                        outcome.safetyIssue = [[outcomeDict objectForKey:@"safety_issue"] boolValue];
+                                                        outcome.measure = [outcomeDict objectForKey:@"measure"];
+                                                        outcome.outcomeType = [outcomeDict objectForKey:@"outcome_type"];
+                                                        outcome.timeFrame = [outcomeDict objectForKey:@"time_frame"];
+                                                        [detail.outcomes addObject:outcome];
+                                                    }
                                                     NSMutableDictionary *notificationDict = [NSMutableDictionary new];
                                                     [notificationDict setObject:detail forKey:@"detail"];
                                                     [[NSNotificationCenter defaultCenter] postNotificationName:@"trialDetailReceived" object:notificationDict];

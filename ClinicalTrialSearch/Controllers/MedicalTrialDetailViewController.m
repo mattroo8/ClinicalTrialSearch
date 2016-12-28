@@ -8,6 +8,7 @@
 
 #import "MedicalTrialDetailViewController.h"
 #import "HTTPSearchDiseases.h"
+#import "MedicalTrialOutcome.h"
 
 @interface MedicalTrialDetailViewController ()
 
@@ -46,8 +47,11 @@
     _titleLabel.text = trialDetail.name;
     [_summaryTextView setValue:trialDetail.summary forKey:@"contentToHTMLString"];
     [_descriptionTextView setValue:trialDetail.desc forKey:@"contentToHTMLString"];
-//    [_spinner stopAnimating];
-//    _spinner.hidden = YES;
+    NSString *outcomeString = @"";
+    for(MedicalTrialOutcome *outcome in trialDetail.outcomes){
+        outcomeString = [NSString stringWithFormat:@"Outcome Type: %@\nDescription: %@\nMeasure: %@\n\n", outcome.outcomeType, outcome.desc, outcome.measure];
+        _outcomeTextView.text = [_outcomeTextView.text stringByAppendingString:outcomeString];
+    }
 }
 
 @end
