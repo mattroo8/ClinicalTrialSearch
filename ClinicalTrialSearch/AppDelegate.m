@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "DiseaseSearchViewController.h"
+#import "SearchViewController.h"
 
 @interface AppDelegate ()
 
@@ -22,9 +22,9 @@
     UINavigationController *navVC = [UINavigationController new];
     navVC.view.backgroundColor = [UIColor whiteColor];
     [self.window setRootViewController:navVC];
-    DiseaseSearchViewController *dsvc = [DiseaseSearchViewController new];
-    dsvc.title = @"Disease Lookup";
-    [navVC pushViewController:dsvc animated:YES];
+    SearchViewController *svc = [SearchViewController new];
+    svc.title = @"Disease Lookup";
+    [navVC pushViewController:svc animated:YES];
     return YES;
 }
 

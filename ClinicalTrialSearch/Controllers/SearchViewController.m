@@ -1,19 +1,19 @@
 //
-//  DiseaseSearchViewController.m
+//  SearchViewController.m
 //  ClinicalTrialSearch
 //
 //  Created by matt rooney on 25/12/2016.
 //  Copyright © 2016 matt rooney. All rights reserved.
 //
 
-#import "DiseaseSearchViewController.h"
+#import "SearchViewController.h"
 #import "HTTPSearchDiseases.h"
 #import "Disease.h"
 #import "DiseaseDetailViewController.h"
 #import "MedicalTrial.h"
 #import "MedicalTrialDetailViewController.h"
 
-@interface DiseaseSearchViewController ()
+@interface SearchViewController ()
 
 @property (weak, nonatomic) IBOutlet UISearchBar *searchBar;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -24,7 +24,7 @@
 
 @end
 
-@implementation DiseaseSearchViewController
+@implementation SearchViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
