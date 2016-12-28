@@ -8,12 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import "Disease.h"
-#import "MedicalTrial.h"
 
 @interface DiseaseDetailViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UITextView *textView;
 @property (strong, nonatomic) Disease *disease;
-@property (strong, nonatomic) MedicalTrial *trial;
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *spinner;
 
 @end
