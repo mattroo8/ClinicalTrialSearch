@@ -216,28 +216,6 @@
     [self.searchBar resignFirstResponder];
 }
 
-//+ (UIColor *)randomColor {
-
-//    srand48(arc4random());
-//    
-//    float red = 0.0;
-//    while (red < 0.1 || red > 0.84) {
-//        red = drand48();
-//    }
-//    
-//    float green = 0.0;
-//    while (green < 0.1 || green > 0.84) {
-//        green = drand48();
-//    }
-//    
-//    float blue = 0.0;
-//    while (blue < 0.1 || blue > 0.84) {
-//        blue = drand48();
-//    }
-//    NSLog(@"Setting nav colour to red: %f green:%f blue: %f", red, green, blue);
-//    return [UIColor colorWithRed:red green:green blue:blue alpha:1.0f];
-//}
-
 -(void)toggleLeftMenu
 {
     MFSideMenuContainerViewController *controller = (MFSideMenuContainerViewController *)[UIApplication sharedApplication].keyWindow.rootViewController;

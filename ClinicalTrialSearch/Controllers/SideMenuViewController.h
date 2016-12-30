@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface SideMenuViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UIButton *diseaseLookUpButton;
+@property (weak, nonatomic) IBOutlet UIButton *MedTrialLookUpButton;
+@property (weak, nonatomic) IBOutlet UIButton *aboutButton;
 
 @end

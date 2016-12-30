@@ -15,7 +15,7 @@
 @property (nonatomic, strong) NSMutableArray *trials;
 @property (weak, nonatomic) IBOutlet UIToolbar *toolBar;
 @property (nonatomic, strong) MFSideMenuContainerViewController *menuContainerViewController;
-
-//+ (UIColor *)randomColor;
+-(void)switchToTrialLookUp;
+-(void)switchToDiseaseLookUp;
 
 @end

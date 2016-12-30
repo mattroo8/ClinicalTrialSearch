@@ -11,6 +11,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SideMenuViewController">
             <connections>
+                <outlet property="MedTrialLookUpButton" destination="jjl-tw-gBK" id="17g-uR-Jh7"/>
+                <outlet property="aboutButton" destination="Xxv-eG-3c1" id="wsN-Lb-TQE"/>
+                <outlet property="diseaseLookUpButton" destination="Fcp-Ip-eDA" id="iWS-WW-2SH"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -27,6 +30,9 @@
                     <state key="normal" title="Disease Lookup">
                         <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
+                    <connections>
+                        <action selector="diseaseButton:" destination="-1" eventType="touchUpInside" id="ALa-xH-YBj"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jjl-tw-gBK">
                     <rect key="frame" x="50" y="165" width="143" height="30"/>
@@ -36,6 +42,9 @@
                     <state key="normal" title="Medical Trial Lookup">
                         <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
+                    <connections>
+                        <action selector="medTrialButton:" destination="-1" eventType="touchUpInside" id="KL5-oH-9nA"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xxv-eG-3c1">
                     <rect key="frame" x="50" y="221" width="46" height="30"/>
@@ -45,6 +54,9 @@
                     <state key="normal" title="About">
                         <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
+                    <connections>
+                        <action selector="aboutButtonPressed:" destination="-1" eventType="touchUpInside" id="dgS-WY-ZMZ"/>
+                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" red="0.69012486934661865" green="0.69004321098327637" blue="0.68991357088088989" alpha="0.57534246575342463" colorSpace="custom" customColorSpace="sRGB"/>
