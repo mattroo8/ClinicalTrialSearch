@@ -52,6 +52,12 @@
     _spinner.hidden = YES;
     
     self.edgesForExtendedLayout = UIRectEdgeNone;
+    
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]
+                                   initWithTarget:self
+                                   action:@selector(dismissKeyboard)];
+    tap.cancelsTouchesInView = NO;
+    [self.view addGestureRecognizer:tap];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -194,6 +200,11 @@
     [_diseases removeAllObjects];
     _searchBar.text = @"";
     [self.tableView reloadData];
+}
+
+- (void) dismissKeyboard
+{
+    [self.searchBar resignFirstResponder];
 }
 
 @end
