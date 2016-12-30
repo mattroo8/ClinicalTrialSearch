@@ -58,6 +58,13 @@
                                    action:@selector(dismissKeyboard)];
     tap.cancelsTouchesInView = NO;
     [self.view addGestureRecognizer:tap];
+    
+    UIBarButtonItem *btn=[[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"menu.png"]
+                                                         style:UIBarButtonItemStylePlain
+                                                        target:self
+                                                        action:@selector(toggleLeftMenu)];
+    
+    self.navigationItem.leftBarButtonItem=btn;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -70,6 +77,8 @@
     UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
     cell.textLabel.lineBreakMode = NSLineBreakByWordWrapping;
     cell.textLabel.numberOfLines = 0;
+    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+    
     if(_inDiseaseSearch){
         Disease *disease = [Disease new];
         disease = [_diseases objectAtIndex:indexPath.row];
@@ -205,6 +214,34 @@
 - (void) dismissKeyboard
 {
     [self.searchBar resignFirstResponder];
+}
+
+//+ (UIColor *)randomColor {
+
+//    srand48(arc4random());
+//    
+//    float red = 0.0;
+//    while (red < 0.1 || red > 0.84) {
+//        red = drand48();
+//    }
+//    
+//    float green = 0.0;
+//    while (green < 0.1 || green > 0.84) {
+//        green = drand48();
+//    }
+//    
+//    float blue = 0.0;
+//    while (blue < 0.1 || blue > 0.84) {
+//        blue = drand48();
+//    }
+//    NSLog(@"Setting nav colour to red: %f green:%f blue: %f", red, green, blue);
+//    return [UIColor colorWithRed:red green:green blue:blue alpha:1.0f];
+//}
+
+-(void)toggleLeftMenu
+{
+    MFSideMenuContainerViewController *controller = (MFSideMenuContainerViewController *)[UIApplication sharedApplication].keyWindow.rootViewController;
+    [controller toggleLeftSideMenuCompletion:^{}];
 }
 
 @end

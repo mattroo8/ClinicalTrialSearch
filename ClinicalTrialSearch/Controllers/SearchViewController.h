@@ -7,11 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MFSideMenu.h"
 
 @interface SearchViewController : UIViewController<UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate>
 
 @property (nonatomic, strong) NSMutableArray *diseases;
 @property (nonatomic, strong) NSMutableArray *trials;
 @property (weak, nonatomic) IBOutlet UIToolbar *toolBar;
+@property (nonatomic, strong) MFSideMenuContainerViewController *menuContainerViewController;
+
+//+ (UIColor *)randomColor;
 
 @end

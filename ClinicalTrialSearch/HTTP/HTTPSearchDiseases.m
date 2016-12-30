@@ -215,7 +215,8 @@
                                                     for(NSDictionary *outcomeDict in [diseasesResponse objectForKey:@"outcomes"]){
                                                         MedicalTrialOutcome *outcome = [MedicalTrialOutcome new];
                                                         outcome.desc = [outcomeDict objectForKey:@"description"];
-                                                        outcome.safetyIssue = [[outcomeDict objectForKey:@"safety_issue"] boolValue];
+                                                        NSString *safetyIssueString = [outcomeDict objectForKey:@"safety_issue"];
+                                                        outcome.safetyIssue = safetyIssueString ? [safetyIssueString boolValue] : false;
                                                         outcome.measure = [outcomeDict objectForKey:@"measure"];
                                                         outcome.outcomeType = [outcomeDict objectForKey:@"outcome_type"];
                                                         outcome.timeFrame = [outcomeDict objectForKey:@"time_frame"];

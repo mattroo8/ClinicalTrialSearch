@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 #import "SearchViewController.h"
+#import "MFSideMenu.h"
+#import "SideMenuViewController.h"
 
 @interface AppDelegate ()
 
@@ -18,14 +20,23 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    MFSideMenuContainerViewController *container = [MFSideMenuContainerViewController
+                                                    containerWithCenterViewController:[self setupMainView]
+                                                    leftMenuViewController:[SideMenuViewController new]
+                                                    rightMenuViewController:nil];
+    self.window.rootViewController = container;
     [self.window makeKeyAndVisible];
-    UINavigationController *navVC = [UINavigationController new];
-    navVC.view.backgroundColor = [UIColor whiteColor];
-    [self.window setRootViewController:navVC];
-    SearchViewController *svc = [SearchViewController new];
-    svc.title = @"Disease Lookup";
-    [navVC pushViewController:svc animated:YES];
     return YES;
+}
+
+-(UINavigationController *)setupMainView{
+    SearchViewController *svc2 = [SearchViewController new];
+    svc2.title = @"Disease Lookup";
+    UINavigationController *navVC = [[UINavigationController alloc]initWithRootViewController:svc2];
+    navVC.view.backgroundColor = [UIColor whiteColor];
+    navVC.navigationBar.barTintColor = [UIColor colorWithRed:0.433964f green:0.837138f blue:0.575706f alpha:1.0f];
+    return navVC;
 }
 
 

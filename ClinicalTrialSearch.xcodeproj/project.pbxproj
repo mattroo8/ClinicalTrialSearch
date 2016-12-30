@@ -29,6 +29,14 @@
 		2872503A1E1162C000496506 /* MedicalTrialDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 287250381E1162C000496506 /* MedicalTrialDetailViewController.m */; };
 		2872503B1E1162C000496506 /* MedicalTrialDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 287250391E1162C000496506 /* MedicalTrialDetailViewController.xib */; };
 		2872503F1E1455FF00496506 /* MedicalTrialOutcome.m in Sources */ = {isa = PBXBuildFile; fileRef = 2872503E1E1455FF00496506 /* MedicalTrialOutcome.m */; };
+		287250421E1691A700496506 /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = 287250401E1691A700496506 /* menu.png */; };
+		287250431E1691A700496506 /* menu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 287250411E1691A700496506 /* menu@2x.png */; };
+		2872504F1E16A80100496506 /* MFSideMenuContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2872504A1E16A80100496506 /* MFSideMenuContainerViewController.m */; };
+		287250501E16A80100496506 /* MFSideMenuShadow.m in Sources */ = {isa = PBXBuildFile; fileRef = 2872504C1E16A80100496506 /* MFSideMenuShadow.m */; };
+		287250511E16A80100496506 /* UIViewController+MFSideMenuAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2872504E1E16A80100496506 /* UIViewController+MFSideMenuAdditions.m */; };
+		287250541E16A8EB00496506 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 287250531E16A8EB00496506 /* QuartzCore.framework */; };
+		287250581E16E55700496506 /* SideMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 287250561E16E55700496506 /* SideMenuViewController.m */; };
+		287250591E16E55700496506 /* SideMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 287250571E16E55700496506 /* SideMenuViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +96,19 @@
 		287250391E1162C000496506 /* MedicalTrialDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MedicalTrialDetailViewController.xib; sourceTree = "<group>"; };
 		2872503D1E1455FF00496506 /* MedicalTrialOutcome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MedicalTrialOutcome.h; sourceTree = "<group>"; };
 		2872503E1E1455FF00496506 /* MedicalTrialOutcome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MedicalTrialOutcome.m; sourceTree = "<group>"; };
+		287250401E1691A700496506 /* menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = menu.png; path = Images/menu.png; sourceTree = "<group>"; };
+		287250411E1691A700496506 /* menu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "menu@2x.png"; path = "Images/menu@2x.png"; sourceTree = "<group>"; };
+		287250481E16A80100496506 /* MFSideMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MFSideMenu.h; path = Frameworks/Navigation/MFSideMenu.h; sourceTree = "<group>"; };
+		287250491E16A80100496506 /* MFSideMenuContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MFSideMenuContainerViewController.h; path = Frameworks/Navigation/MFSideMenuContainerViewController.h; sourceTree = "<group>"; };
+		2872504A1E16A80100496506 /* MFSideMenuContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MFSideMenuContainerViewController.m; path = Frameworks/Navigation/MFSideMenuContainerViewController.m; sourceTree = "<group>"; };
+		2872504B1E16A80100496506 /* MFSideMenuShadow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MFSideMenuShadow.h; path = Frameworks/Navigation/MFSideMenuShadow.h; sourceTree = "<group>"; };
+		2872504C1E16A80100496506 /* MFSideMenuShadow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MFSideMenuShadow.m; path = Frameworks/Navigation/MFSideMenuShadow.m; sourceTree = "<group>"; };
+		2872504D1E16A80100496506 /* UIViewController+MFSideMenuAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIViewController+MFSideMenuAdditions.h"; path = "Frameworks/Navigation/UIViewController+MFSideMenuAdditions.h"; sourceTree = "<group>"; };
+		2872504E1E16A80100496506 /* UIViewController+MFSideMenuAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+MFSideMenuAdditions.m"; path = "Frameworks/Navigation/UIViewController+MFSideMenuAdditions.m"; sourceTree = "<group>"; };
+		287250531E16A8EB00496506 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		287250551E16E55700496506 /* SideMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SideMenuViewController.h; sourceTree = "<group>"; };
+		287250561E16E55700496506 /* SideMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SideMenuViewController.m; sourceTree = "<group>"; };
+		287250571E16E55700496506 /* SideMenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SideMenuViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +116,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				287250541E16A8EB00496506 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,6 +144,7 @@
 				28724FF11E1079D200496506 /* ClinicalTrialSearchTests */,
 				28724FFC1E1079D200496506 /* ClinicalTrialSearchUITests */,
 				28724FD61E1079D100496506 /* Products */,
+				287250521E16A8EB00496506 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -138,6 +161,7 @@
 		28724FD71E1079D100496506 /* ClinicalTrialSearch */ = {
 			isa = PBXGroup;
 			children = (
+				287250441E16A56D00496506 /* Frameworks */,
 				2872503C1E128A4E00496506 /* Controllers */,
 				287250191E10996900496506 /* HTTP */,
 				287250181E10995C00496506 /* Models */,
@@ -155,6 +179,8 @@
 		28724FD81E1079D100496506 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				287250401E1691A700496506 /* menu.png */,
+				287250411E1691A700496506 /* menu@2x.png */,
 				2872502F1E11283100496506 /* disease_small.png */,
 				2872502B1E1123B000496506 /* clinical_trial_small.png */,
 				2872502C1E1123B000496506 /* medicine_small.png */,
@@ -228,8 +254,41 @@
 				287250221E10A22200496506 /* SearchViewController.m */,
 				287250371E1162C000496506 /* MedicalTrialDetailViewController.h */,
 				287250381E1162C000496506 /* MedicalTrialDetailViewController.m */,
+				287250551E16E55700496506 /* SideMenuViewController.h */,
+				287250561E16E55700496506 /* SideMenuViewController.m */,
+				287250571E16E55700496506 /* SideMenuViewController.xib */,
 			);
 			name = Controllers;
+			sourceTree = "<group>";
+		};
+		287250441E16A56D00496506 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				287250451E16A57700496506 /* Navigation */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		287250451E16A57700496506 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				287250481E16A80100496506 /* MFSideMenu.h */,
+				287250491E16A80100496506 /* MFSideMenuContainerViewController.h */,
+				2872504A1E16A80100496506 /* MFSideMenuContainerViewController.m */,
+				2872504B1E16A80100496506 /* MFSideMenuShadow.h */,
+				2872504C1E16A80100496506 /* MFSideMenuShadow.m */,
+				2872504D1E16A80100496506 /* UIViewController+MFSideMenuAdditions.h */,
+				2872504E1E16A80100496506 /* UIViewController+MFSideMenuAdditions.m */,
+			);
+			name = Navigation;
+			sourceTree = "<group>";
+		};
+		287250521E16A8EB00496506 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				287250531E16A8EB00496506 /* QuartzCore.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -343,10 +402,13 @@
 			files = (
 				2872501E1E1099C300496506 /* DiseaseDetailViewController.xib in Resources */,
 				28724FE81E1079D100496506 /* LaunchScreen.storyboard in Resources */,
+				287250421E1691A700496506 /* menu.png in Resources */,
 				2872503B1E1162C000496506 /* MedicalTrialDetailViewController.xib in Resources */,
+				287250591E16E55700496506 /* SideMenuViewController.xib in Resources */,
 				287250301E11283100496506 /* disease_small.png in Resources */,
 				28724FE51E1079D100496506 /* Assets.xcassets in Resources */,
 				2872500F1E107A3600496506 /* SearchViewController.xib in Resources */,
+				287250431E1691A700496506 /* menu@2x.png in Resources */,
 				2872502D1E1123B000496506 /* clinical_trial_small.png in Resources */,
 				2872502E1E1123B000496506 /* medicine_small.png in Resources */,
 			);
@@ -373,7 +435,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2872504F1E16A80100496506 /* MFSideMenuContainerViewController.m in Sources */,
 				28724FDD1E1079D100496506 /* AppDelegate.m in Sources */,
+				287250501E16A80100496506 /* MFSideMenuShadow.m in Sources */,
 				287250241E10A22200496506 /* SearchViewController.m in Sources */,
 				287250121E107B8500496506 /* HTTPSearchDiseases.m in Sources */,
 				2872503F1E1455FF00496506 /* MedicalTrialOutcome.m in Sources */,
@@ -383,6 +447,8 @@
 				287250151E107C2100496506 /* Disease.m in Sources */,
 				287250231E10A22200496506 /* DiseaseDetailViewController.m in Sources */,
 				2872503A1E1162C000496506 /* MedicalTrialDetailViewController.m in Sources */,
+				287250581E16E55700496506 /* SideMenuViewController.m in Sources */,
+				287250511E16A80100496506 /* UIViewController+MFSideMenuAdditions.m in Sources */,
 				2872502A1E10B33E00496506 /* Mesh.m in Sources */,
 				28724FDA1E1079D100496506 /* main.m in Sources */,
 			);
