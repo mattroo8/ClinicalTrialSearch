@@ -26,6 +26,7 @@
                                                     leftMenuViewController:[SideMenuViewController new]
                                                     rightMenuViewController:nil];
     self.window.rootViewController = container;
+    container.panMode = MFSideMenuPanModeNone;
     [self.window makeKeyAndVisible];
     return YES;
 }
