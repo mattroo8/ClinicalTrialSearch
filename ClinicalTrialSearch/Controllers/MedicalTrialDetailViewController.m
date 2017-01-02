@@ -64,13 +64,34 @@
         [attributedString appendAttributedString:descriptionString];
         [attributedString appendAttributedString:[self convertHTMLToAtrributedString:trialDetail.desc]];
     }
+    if(trialDetail.outcomes && [trialDetail.outcomes count]>0){
+        NSMutableAttributedString *outcomeString = [[NSMutableAttributedString alloc] initWithString:@"\n\nOutcomes"
+                                                                                              attributes:@{NSFontAttributeName: [UIFont boldSystemFontOfSize:14]}];
+        [attributedString appendAttributedString:outcomeString];
+
+        for(MedicalTrialOutcome *outcome in trialDetail.outcomes){
+            if(outcome.outcomeType){
+                NSMutableAttributedString *outcomeType = [[NSMutableAttributedString alloc] initWithString:@"\nType: "
+                                                                                                  attributes:@{NSFontAttributeName: [UIFont boldSystemFontOfSize:12]}];
+                [attributedString appendAttributedString:outcomeType];
+                [attributedString appendAttributedString:[self convertHTMLToAtrributedString:outcome.outcomeType]];
+            }
+            if(outcome.timeFrame){
+                NSMutableAttributedString *outcomeTimeFrame = [[NSMutableAttributedString alloc] initWithString:@"\nTime Frame: "
+                                                                                                attributes:@{NSFontAttributeName: [UIFont boldSystemFontOfSize:12]}];
+                [attributedString appendAttributedString:outcomeTimeFrame];
+                [attributedString appendAttributedString:[self convertHTMLToAtrributedString:outcome.timeFrame]];
+            }
+            if(outcome.measure){
+                NSMutableAttributedString *outcomeMeasure = [[NSMutableAttributedString alloc] initWithString:@"\nMeasure: "
+                                                                                                attributes:@{NSFontAttributeName: [UIFont boldSystemFontOfSize:12]}];
+                [attributedString appendAttributedString:outcomeMeasure];
+                [attributedString appendAttributedString:[self convertHTMLToAtrributedString:outcome.measure]];
+            }
+            [attributedString appendAttributedString:[[NSMutableAttributedString alloc]initWithString:@"\n"]];
+        }
+    }
     _textView.attributedText = attributedString;
-    
-//    NSString *outcomeString = @"";
-//    for(MedicalTrialOutcome *outcome in trialDetail.outcomes){
-//        outcomeString = [NSString stringWithFormat:@"Outcome Type: %@\nDescription: %@\nMeasure: %@\n\n", outcome.outcomeType, outcome.desc, outcome.measure];
-//        _outcomeTextView.text = [_outcomeTextView.text stringByAppendingString:outcomeString];
-//    }
 }
 
 -(NSMutableAttributedString *)convertHTMLToAtrributedString:(NSString *)HTML
