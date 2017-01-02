@@ -25,6 +25,8 @@
 
 -(void)viewWillAppear:(BOOL)animated
 {
+    [_spinner startAnimating];
+    _spinner.hidden = NO;
     [HTTPSearchDiseases searchMedicalTrialDetail:_trial.id];
 }
 
@@ -45,6 +47,9 @@
 
 -(void)setTextViewTextAndStopLoading:(MedicalTrialDetail *)trialDetail
 {
+    [_spinner stopAnimating];
+    _spinner.hidden = YES;
+    
     //Set the title
     _titleLabel.text = trialDetail.name;
     

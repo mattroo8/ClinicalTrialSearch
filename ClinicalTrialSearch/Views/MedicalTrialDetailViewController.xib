@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MedicalTrialDetailViewController">
             <connections>
+                <outlet property="spinner" destination="cux-Rh-4es" id="wcs-I3-QdY"/>
                 <outlet property="textView" destination="fnq-zg-hae" id="TOB-Ju-r9r"/>
                 <outlet property="titleLabel" destination="APJ-0x-agu" id="0qY-Cl-O52"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -24,6 +25,7 @@
                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fnq-zg-hae">
                     <rect key="frame" x="0.0" y="36" width="375" height="631"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                 </textView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="APJ-0x-agu">
@@ -32,15 +34,21 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="cux-Rh-4es">
+                    <rect key="frame" x="169" y="315" width="37" height="37"/>
+                    <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                </activityIndicatorView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="fnq-zg-hae" firstAttribute="top" secondItem="APJ-0x-agu" secondAttribute="bottom" constant="16" id="IvN-Zn-H1J"/>
+                <constraint firstItem="cux-Rh-4es" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="K2u-pw-BqD"/>
                 <constraint firstItem="APJ-0x-agu" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="MXw-zE-88J"/>
                 <constraint firstItem="APJ-0x-agu" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="Qko-1I-PGt"/>
                 <constraint firstAttribute="trailing" secondItem="APJ-0x-agu" secondAttribute="trailing" constant="16" id="Vxq-uw-EA4"/>
                 <constraint firstItem="fnq-zg-hae" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="YOa-Jr-Su1"/>
                 <constraint firstAttribute="bottom" secondItem="fnq-zg-hae" secondAttribute="bottom" id="sTs-Hu-Gu1"/>
+                <constraint firstItem="cux-Rh-4es" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="twO-2d-MTY"/>
                 <constraint firstAttribute="trailing" secondItem="fnq-zg-hae" secondAttribute="trailing" id="xMG-Eh-kIA"/>
             </constraints>
             <point key="canvasLocation" x="45.5" y="154.5"/>

@@ -13,4 +13,5 @@
 @property (weak, nonatomic) IBOutlet UITextView *textView;
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 @property (strong, nonatomic) MedicalTrial *trial;
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *spinner;
 @end
