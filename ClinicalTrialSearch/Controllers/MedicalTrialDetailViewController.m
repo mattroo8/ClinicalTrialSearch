@@ -43,15 +43,46 @@
     });
 }
 
--(void)setTextViewTextAndStopLoading:(MedicalTrialDetail *)trialDetail {
+-(void)setTextViewTextAndStopLoading:(MedicalTrialDetail *)trialDetail
+{
+    //Set the title
     _titleLabel.text = trialDetail.name;
-    [_summaryTextView setValue:trialDetail.summary forKey:@"contentToHTMLString"];
-    [_descriptionTextView setValue:trialDetail.desc forKey:@"contentToHTMLString"];
-    NSString *outcomeString = @"";
-    for(MedicalTrialOutcome *outcome in trialDetail.outcomes){
-        outcomeString = [NSString stringWithFormat:@"Outcome Type: %@\nDescription: %@\nMeasure: %@\n\n", outcome.outcomeType, outcome.desc, outcome.measure];
-        _outcomeTextView.text = [_outcomeTextView.text stringByAppendingString:outcomeString];
+    
+    NSMutableAttributedString *attributedString = [NSMutableAttributedString new];
+    
+    //Set the Summary text
+    if(trialDetail.summary && trialDetail.summary.length > 0){
+        NSMutableAttributedString *summaryString = [[NSMutableAttributedString alloc] initWithString:@"Summary\n"
+                                                                                              attributes:@{NSFontAttributeName: [UIFont boldSystemFontOfSize:14]}];
+        [attributedString appendAttributedString:summaryString];
+        [attributedString appendAttributedString:[self convertHTMLToAtrributedString:trialDetail.summary]];
     }
+    //Set the Description text
+    if(trialDetail.desc && trialDetail.desc.length > 0){
+        NSMutableAttributedString *descriptionString = [[NSMutableAttributedString alloc] initWithString:@"\n\nDescription\n"
+                                                                                              attributes:@{NSFontAttributeName: [UIFont boldSystemFontOfSize:14]}];
+        [attributedString appendAttributedString:descriptionString];
+        [attributedString appendAttributedString:[self convertHTMLToAtrributedString:trialDetail.desc]];
+    }
+    _textView.attributedText = attributedString;
+    
+//    NSString *outcomeString = @"";
+//    for(MedicalTrialOutcome *outcome in trialDetail.outcomes){
+//        outcomeString = [NSString stringWithFormat:@"Outcome Type: %@\nDescription: %@\nMeasure: %@\n\n", outcome.outcomeType, outcome.desc, outcome.measure];
+//        _outcomeTextView.text = [_outcomeTextView.text stringByAppendingString:outcomeString];
+//    }
+}
+
+-(NSMutableAttributedString *)convertHTMLToAtrributedString:(NSString *)HTML
+{
+    NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc]
+                                            initWithData: [HTML dataUsingEncoding:NSUnicodeStringEncoding]
+                                            options: @{ NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType }
+                                            documentAttributes: nil
+                                            error: nil
+                                            ];
+    [attributedString addAttributes:@{NSFontAttributeName: [UIFont systemFontOfSize:12]} range:NSMakeRange(0, attributedString.length)];
+    return attributedString;
 }
 
 @end

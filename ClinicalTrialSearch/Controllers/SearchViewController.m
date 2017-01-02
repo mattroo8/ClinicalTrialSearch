@@ -108,7 +108,7 @@
     } else {
         MedicalTrialDetailViewController *mtvc = [MedicalTrialDetailViewController new];
         MedicalTrial *trial = [_trials objectAtIndex:indexPath.row];
-        mtvc.title = trial.name;
+        mtvc.title = @"Trial Details";
         mtvc.trial = trial;
         viewToPresent = mtvc;
     }

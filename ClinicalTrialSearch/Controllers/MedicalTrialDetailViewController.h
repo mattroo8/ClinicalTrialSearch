@@ -10,10 +10,7 @@
 #import "MedicalTrial.h"
 
 @interface MedicalTrialDetailViewController : UIViewController
-@property (weak, nonatomic) IBOutlet UITextView *summaryTextView;
-@property (weak, nonatomic) IBOutlet UITextView *descriptionTextView;
-@property (strong, nonatomic) MedicalTrial *trial;
+@property (weak, nonatomic) IBOutlet UITextView *textView;
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
-@property (weak, nonatomic) IBOutlet UILabel *outcomeLabel;
-@property (weak, nonatomic) IBOutlet UITextView *outcomeTextView;
+@property (strong, nonatomic) MedicalTrial *trial;
 @end
