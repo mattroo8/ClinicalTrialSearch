@@ -37,7 +37,20 @@
     UINavigationController *navVC = [[UINavigationController alloc]initWithRootViewController:svc2];
     navVC.view.backgroundColor = [UIColor whiteColor];
     navVC.navigationBar.barTintColor = [UIColor colorWithRed:0.433964f green:0.837138f blue:0.575706f alpha:1.0f];
+    
+    UIBarButtonItem *btn = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"menu.png"]
+                                                         style:UIBarButtonItemStylePlain
+                                                        target:self
+                                                        action:@selector(toggleLeftMenu)];
+    
+    navVC.navigationBar.topItem.leftBarButtonItem = btn;
     return navVC;
+}
+
+-(void)toggleLeftMenu
+{
+    MFSideMenuContainerViewController *controller = (MFSideMenuContainerViewController *)[UIApplication sharedApplication].keyWindow.rootViewController;
+    [controller toggleLeftSideMenuCompletion:^{}];
 }
 
 

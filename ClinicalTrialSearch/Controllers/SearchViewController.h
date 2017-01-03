@@ -15,6 +15,8 @@
 @property (nonatomic, strong) NSMutableArray *trials;
 @property (weak, nonatomic) IBOutlet UIToolbar *toolBar;
 @property (nonatomic, strong) MFSideMenuContainerViewController *menuContainerViewController;
+@property BOOL inDiseaseSearch;
+
 -(void)switchToTrialLookUp;
 -(void)switchToDiseaseLookUp;
 

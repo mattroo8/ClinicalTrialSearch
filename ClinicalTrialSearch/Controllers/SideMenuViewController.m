@@ -9,6 +9,7 @@
 #import "SideMenuViewController.h"
 #import "MFSideMenu.h"
 #import "SearchViewController.h"
+#import "AboutViewController.h"
 
 @interface SideMenuViewController ()
 
@@ -31,19 +32,58 @@
 {
     MFSideMenuContainerViewController *controller = (MFSideMenuContainerViewController *)[UIApplication sharedApplication].keyWindow.rootViewController;
     UINavigationController *nav = (UINavigationController *)controller.centerViewController;
-    SearchViewController *svc = (SearchViewController *)nav.topViewController;
+    SearchViewController *svc = [SearchViewController new];
+    if([nav.topViewController isKindOfClass:[SearchViewController class]]){
+        svc = (SearchViewController *)nav.topViewController;
+    }
+    svc.inDiseaseSearch = NO;
     [svc switchToDiseaseLookUp];
+    [nav setViewControllers:[NSArray arrayWithObject:svc] animated:NO];
+    UIBarButtonItem *btn = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"menu.png"]
+                                                           style:UIBarButtonItemStylePlain
+                                                          target:self
+                                                          action:@selector(toggleLeftMenu)];
+    
+    nav.navigationBar.topItem.leftBarButtonItem = btn;
     [controller toggleLeftSideMenuCompletion:^{}];
 }
 - (IBAction)medTrialButton:(id)sender {
     MFSideMenuContainerViewController *controller = (MFSideMenuContainerViewController *)[UIApplication sharedApplication].keyWindow.rootViewController;
     UINavigationController *nav = (UINavigationController *)controller.centerViewController;
-    SearchViewController *svc = (SearchViewController *)nav.topViewController;
+    SearchViewController *svc = [SearchViewController new];
+    if([nav.topViewController isKindOfClass:[SearchViewController class]]){
+        svc = (SearchViewController *)nav.topViewController;
+    }
+    svc.inDiseaseSearch = YES;
     [svc switchToTrialLookUp];
+    [nav setViewControllers:[NSArray arrayWithObject:svc] animated:NO];
+    UIBarButtonItem *btn = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"menu.png"]
+                                                           style:UIBarButtonItemStylePlain
+                                                          target:self
+                                                          action:@selector(toggleLeftMenu)];
+    
+    nav.navigationBar.topItem.leftBarButtonItem = btn;
     [controller toggleLeftSideMenuCompletion:^{}];
 }
 - (IBAction)aboutButtonPressed:(id)sender {
-    NSLog(@"Switch to about view");
+    MFSideMenuContainerViewController *controller = (MFSideMenuContainerViewController *)[UIApplication sharedApplication].keyWindow.rootViewController;
+    UINavigationController *nav = (UINavigationController *)controller.centerViewController;
+    AboutViewController *avc = [AboutViewController new];
+    avc.title = @"About";
+    [nav setViewControllers:[NSArray arrayWithObject:avc] animated:NO];
+    UIBarButtonItem *btn = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"menu.png"]
+                                                           style:UIBarButtonItemStylePlain
+                                                          target:self
+                                                          action:@selector(toggleLeftMenu)];
+    
+    nav.navigationBar.topItem.leftBarButtonItem = btn;
+    [controller toggleLeftSideMenuCompletion:^{}];
+}
+
+-(void)toggleLeftMenu
+{
+    MFSideMenuContainerViewController *controller = (MFSideMenuContainerViewController *)[UIApplication sharedApplication].keyWindow.rootViewController;
+    [controller toggleLeftSideMenuCompletion:^{}];
 }
 
 @end

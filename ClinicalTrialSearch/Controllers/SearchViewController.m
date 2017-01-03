@@ -17,7 +17,6 @@
 
 @property (weak, nonatomic) IBOutlet UISearchBar *searchBar;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
-@property BOOL inDiseaseSearch;
 @property (strong, nonatomic) NSTimer *searchTimer;
 
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *spinner;
@@ -58,13 +57,6 @@
                                    action:@selector(dismissKeyboard)];
     tap.cancelsTouchesInView = NO;
     [self.view addGestureRecognizer:tap];
-    
-    UIBarButtonItem *btn=[[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"menu.png"]
-                                                         style:UIBarButtonItemStylePlain
-                                                        target:self
-                                                        action:@selector(toggleLeftMenu)];
-    
-    self.navigationItem.leftBarButtonItem=btn;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -214,12 +206,6 @@
 - (void) dismissKeyboard
 {
     [self.searchBar resignFirstResponder];
-}
-
--(void)toggleLeftMenu
-{
-    MFSideMenuContainerViewController *controller = (MFSideMenuContainerViewController *)[UIApplication sharedApplication].keyWindow.rootViewController;
-    [controller toggleLeftSideMenuCompletion:^{}];
 }
 
 @end
