@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		282906021E1D9BA600C3A43E /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 282906001E1D9BA600C3A43E /* AboutViewController.m */; };
+		282906031E1D9BA600C3A43E /* AboutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 282906011E1D9BA600C3A43E /* AboutViewController.xib */; };
 		28724FDA1E1079D100496506 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 28724FD91E1079D100496506 /* main.m */; };
 		28724FDD1E1079D100496506 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28724FDC1E1079D100496506 /* AppDelegate.m */; };
 		28724FE51E1079D100496506 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28724FE41E1079D100496506 /* Assets.xcassets */; };
@@ -57,6 +59,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		282905FF1E1D9BA600C3A43E /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		282906001E1D9BA600C3A43E /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
+		282906011E1D9BA600C3A43E /* AboutViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutViewController.xib; sourceTree = "<group>"; };
 		28724FD51E1079D100496506 /* ClinicalTrialSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClinicalTrialSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28724FD91E1079D100496506 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		28724FDB1E1079D100496506 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -249,6 +254,9 @@
 		2872503C1E128A4E00496506 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				282905FF1E1D9BA600C3A43E /* AboutViewController.h */,
+				282906001E1D9BA600C3A43E /* AboutViewController.m */,
+				282906011E1D9BA600C3A43E /* AboutViewController.xib */,
 				2872505F1E17179300496506 /* SideMenuViewController.h */,
 				287250601E17179300496506 /* SideMenuViewController.m */,
 				2872501F1E10A22200496506 /* DiseaseDetailViewController.h */,
@@ -410,6 +418,7 @@
 				2872500F1E107A3600496506 /* SearchViewController.xib in Resources */,
 				287250431E1691A700496506 /* menu@2x.png in Resources */,
 				2872502D1E1123B000496506 /* clinical_trial_small.png in Resources */,
+				282906031E1D9BA600C3A43E /* AboutViewController.xib in Resources */,
 				2872502E1E1123B000496506 /* medicine_small.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -444,6 +453,7 @@
 				287250331E11305D00496506 /* MedicalTrial.m in Sources */,
 				287250661E1717C100496506 /* MedicalTrialOutcome.m in Sources */,
 				287250271E10A6FA00496506 /* DiseaseDetail.m in Sources */,
+				282906021E1D9BA600C3A43E /* AboutViewController.m in Sources */,
 				287250151E107C2100496506 /* Disease.m in Sources */,
 				287250231E10A22200496506 /* DiseaseDetailViewController.m in Sources */,
 				2872503A1E1162C000496506 /* MedicalTrialDetailViewController.m in Sources */,
