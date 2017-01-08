@@ -23,9 +23,6 @@
 		287250241E10A22200496506 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 287250221E10A22200496506 /* SearchViewController.m */; };
 		287250271E10A6FA00496506 /* DiseaseDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = 287250261E10A6FA00496506 /* DiseaseDetail.m */; };
 		2872502A1E10B33E00496506 /* Mesh.m in Sources */ = {isa = PBXBuildFile; fileRef = 287250291E10B33E00496506 /* Mesh.m */; };
-		2872502D1E1123B000496506 /* clinical_trial_small.png in Resources */ = {isa = PBXBuildFile; fileRef = 2872502B1E1123B000496506 /* clinical_trial_small.png */; };
-		2872502E1E1123B000496506 /* medicine_small.png in Resources */ = {isa = PBXBuildFile; fileRef = 2872502C1E1123B000496506 /* medicine_small.png */; };
-		287250301E11283100496506 /* disease_small.png in Resources */ = {isa = PBXBuildFile; fileRef = 2872502F1E11283100496506 /* disease_small.png */; };
 		287250331E11305D00496506 /* MedicalTrial.m in Sources */ = {isa = PBXBuildFile; fileRef = 287250321E11305D00496506 /* MedicalTrial.m */; };
 		287250361E115CED00496506 /* MedicalTrialDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = 287250351E115CED00496506 /* MedicalTrialDetail.m */; };
 		2872503A1E1162C000496506 /* MedicalTrialDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 287250381E1162C000496506 /* MedicalTrialDetailViewController.m */; };
@@ -89,9 +86,6 @@
 		287250261E10A6FA00496506 /* DiseaseDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DiseaseDetail.m; path = Models/DiseaseDetail.m; sourceTree = "<group>"; };
 		287250281E10B33E00496506 /* Mesh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Mesh.h; path = Models/Mesh.h; sourceTree = "<group>"; };
 		287250291E10B33E00496506 /* Mesh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Mesh.m; path = Models/Mesh.m; sourceTree = "<group>"; };
-		2872502B1E1123B000496506 /* clinical_trial_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = clinical_trial_small.png; path = Images/clinical_trial_small.png; sourceTree = "<group>"; };
-		2872502C1E1123B000496506 /* medicine_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = medicine_small.png; path = Images/medicine_small.png; sourceTree = "<group>"; };
-		2872502F1E11283100496506 /* disease_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = disease_small.png; path = Images/disease_small.png; sourceTree = "<group>"; };
 		287250311E11305D00496506 /* MedicalTrial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MedicalTrial.h; path = Models/MedicalTrial.h; sourceTree = "<group>"; };
 		287250321E11305D00496506 /* MedicalTrial.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MedicalTrial.m; path = Models/MedicalTrial.m; sourceTree = "<group>"; };
 		287250341E115CED00496506 /* MedicalTrialDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MedicalTrialDetail.h; path = Models/MedicalTrialDetail.h; sourceTree = "<group>"; };
@@ -186,9 +180,6 @@
 			children = (
 				287250401E1691A700496506 /* menu.png */,
 				287250411E1691A700496506 /* menu@2x.png */,
-				2872502F1E11283100496506 /* disease_small.png */,
-				2872502B1E1123B000496506 /* clinical_trial_small.png */,
-				2872502C1E1123B000496506 /* medicine_small.png */,
 				28724FD91E1079D100496506 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -413,13 +404,10 @@
 				287250421E1691A700496506 /* menu.png in Resources */,
 				2872503B1E1162C000496506 /* MedicalTrialDetailViewController.xib in Resources */,
 				287250631E17179F00496506 /* SideMenuViewController.xib in Resources */,
-				287250301E11283100496506 /* disease_small.png in Resources */,
 				28724FE51E1079D100496506 /* Assets.xcassets in Resources */,
 				2872500F1E107A3600496506 /* SearchViewController.xib in Resources */,
 				287250431E1691A700496506 /* menu@2x.png in Resources */,
-				2872502D1E1123B000496506 /* clinical_trial_small.png in Resources */,
 				282906031E1D9BA600C3A43E /* AboutViewController.xib in Resources */,
-				2872502E1E1123B000496506 /* medicine_small.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -33,19 +33,7 @@
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(diseasesReceieved:) name:@"diseasesReceived" object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(trialsReceieved:) name:@"trialsReceived" object:nil];
-    
-    UIImage *clinicalTrialImage = [[UIImage imageNamed:@"clinical_trial_small.png"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-    UIImage *diseaseImage = [[UIImage imageNamed:@"disease_small.png"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-    
-    NSMutableArray *buttonsArray = [[NSMutableArray alloc] init];
-    
-    UIBarButtonItem *diseaseButton = [[UIBarButtonItem alloc] initWithImage:diseaseImage style:UIBarButtonItemStylePlain target:self action:@selector(switchToDiseaseLookUp)];
-    [buttonsArray addObject:diseaseButton];
-    
-    UIBarButtonItem *clinicalTrialButton = [[UIBarButtonItem alloc] initWithImage:clinicalTrialImage style:UIBarButtonItemStylePlain target:self action:@selector(switchToTrialLookUp)];
-    [buttonsArray addObject:clinicalTrialButton];
-    
-    [_toolBar setItems:buttonsArray];
+
     _inDiseaseSearch = YES;
     
     _spinner.hidden = YES;

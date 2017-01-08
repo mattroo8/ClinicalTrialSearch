@@ -68,11 +68,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ClinicalTrialSearch/Controllers/SearchViewController.m"
-            timestampString = "505171005.405321"
+            timestampString = "505575930.322287"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "181"
-            endingLineNumber = "181"
+            startingLineNumber = "169"
+            endingLineNumber = "169"
             landmarkName = "-switchToTrialLookUp"
             landmarkType = "7">
          </BreakpointContent>
