@@ -133,22 +133,40 @@
 
 -(void)searchDisease:(NSTimer *)timer
 {
-    [HTTPHelper searchForDisease:timer.userInfo];
+    [HTTPHelper searchForDisease:timer.userInfo withNotificationName:@"diseasesReceived"];
 }
 
 -(void)searchMedicalTrial:(NSTimer *)timer
 {
-    [HTTPHelper searchMedicalTrial:timer.userInfo];
+    [HTTPHelper searchMedicalTrial:timer.userInfo withNotificationName:@"trialsReceived"];
 }
 
 -(void)diseasesReceieved:(NSNotification *)notification
 {
     if(_inDiseaseSearch){
         dispatch_async (dispatch_get_main_queue(), ^{
+            
+            NSError *error;
+            if((error = (NSError *)[notification.object objectForKey:@"error"])){
+                [_spinner stopAnimating];
+                _spinner.hidden = YES;
+                UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Error"
+                                                                               message:[error.userInfo objectForKey:@"NSLocalizedDescription"]
+                                                                        preferredStyle:UIAlertControllerStyleAlert];
+                
+                UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault
+                                                                      handler:^(UIAlertAction * action) {
+                                                                          [self.navigationController popViewControllerAnimated:YES];
+                                                                      }];
+                
+                [alert addAction:defaultAction];
+                [self presentViewController:alert animated:YES completion:nil];
+            } else {
 
-            NSMutableDictionary *dict = notification.object;
-            _diseases = [dict objectForKey:@"diseases"];
-            [_tableView reloadData];
+                NSMutableDictionary *dict = notification.object;
+                _diseases = [dict objectForKey:@"diseases"];
+                [_tableView reloadData];
+            }
         });
     }
 }
@@ -157,10 +175,26 @@
 {
     if(!_inDiseaseSearch){
         dispatch_async (dispatch_get_main_queue(), ^{
-            
-            NSMutableDictionary *dict = notification.object;
-            _trials = [dict objectForKey:@"trials"];
-            [_tableView reloadData];
+            NSError *error;
+            if((error = (NSError *)[notification.object objectForKey:@"error"])){
+                [_spinner stopAnimating];
+                _spinner.hidden = YES;
+                UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Error"
+                                                                               message:[error.userInfo objectForKey:@"NSLocalizedDescription"]
+                                                                        preferredStyle:UIAlertControllerStyleAlert];
+                
+                UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault
+                                                                      handler:^(UIAlertAction * action) {
+                                                                          [self.navigationController popViewControllerAnimated:YES];
+                                                                      }];
+                
+                [alert addAction:defaultAction];
+                [self presentViewController:alert animated:YES completion:nil];
+            } else {
+                NSMutableDictionary *dict = notification.object;
+                _trials = [dict objectForKey:@"trials"];
+                [_tableView reloadData];
+            }
         });
     }
 }

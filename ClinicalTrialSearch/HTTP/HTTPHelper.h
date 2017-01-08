@@ -10,9 +10,9 @@
 
 @interface HTTPHelper : NSObject <NSURLConnectionDelegate>
 
-+(void)searchForDisease:(NSString *)diseaseName;
-+(void)getDetailsForDiseaseId:(NSString *)diseaseId;
-+(void)searchMedicalTrial:(NSString *)trialName;
-+(void)searchMedicalTrialDetail:(NSString *)trialId;
++(void)searchForDisease:(NSString *)diseaseName withNotificationName:(NSString *)notificationName;
++(void)getDetailsForDiseaseId:(NSString *)diseaseId withNotificationName:(NSString *)notificationName;
++(void)searchMedicalTrial:(NSString *)trialName withNotificationName:(NSString *)notificationName;
++(void)searchMedicalTrialDetail:(NSString *)trialId withNotificationName:(NSString *)notificationName;
 
 @end

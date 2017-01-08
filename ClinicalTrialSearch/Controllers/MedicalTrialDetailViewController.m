@@ -28,7 +28,7 @@
 {
     [_spinner startAnimating];
     _spinner.hidden = NO;
-    [HTTPHelper searchMedicalTrialDetail:_trial.id];
+    [HTTPHelper searchMedicalTrialDetail:_trial.id withNotificationName:@"trialDetailReceived"];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -39,14 +39,31 @@
 -(void)trialDetailReceived:(NSNotification *)notif
 {
     dispatch_async (dispatch_get_main_queue(), ^{
-        NSMutableDictionary *dict = [NSMutableDictionary new];
-        dict = notif.object;
-        _trial.detail = [dict objectForKey:@"detail"];
-        [self setTextViewTextAndStopLoading:_trial.detail];
+        
+        [_spinner stopAnimating];
+        _spinner.hidden = YES;
+        
+        NSError *error;
+        if((error = (NSError *)[notif.object objectForKey:@"error"])){
+            UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Error"
+                                                                           message:[error.userInfo objectForKey:@"NSLocalizedDescription"]
+                                                                    preferredStyle:UIAlertControllerStyleAlert];
+            
+            UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault
+                                                                  handler:^(UIAlertAction * action) {
+                                                                      [self.navigationController popViewControllerAnimated:YES];
+                                                                  }];
+            
+            [alert addAction:defaultAction];
+            [self presentViewController:alert animated:YES completion:nil];
+        } else {
+            _trial.detail = [notif.object objectForKey:@"detail"];
+            [self setTextViewText:_trial.detail];
+        }
     });
 }
 
--(void)setTextViewTextAndStopLoading:(MedicalTrialDetail *)trialDetail
+-(void)setTextViewText:(MedicalTrialDetail *)trialDetail
 {
     [_spinner stopAnimating];
     _spinner.hidden = YES;

@@ -17,7 +17,7 @@
 
 @implementation HTTPHelper
 
-+(void)searchForDisease:(NSString *)diseaseName
++(void)searchForDisease:(NSString *)diseaseName withNotificationName:(NSString *)notificationName
 {
     //Create the URL componenets
     NSURLComponents *components = [NSURLComponents new];
@@ -60,20 +60,22 @@
                                                     NSLog(@"Test");
                                                     NSMutableDictionary *notificationDict = [NSMutableDictionary new];
                                                     [notificationDict setObject:diseases forKey:@"diseases"];
-                                                    [[NSNotificationCenter defaultCenter] postNotificationName:@"diseasesReceived" object:notificationDict];
+                                                    [[NSNotificationCenter defaultCenter] postNotificationName:notificationName object:notificationDict];
                                                 }
                                             }  else {
                                                 //Web server is returning an error
                                             }
                                         } else {
                                             // Fail
-                                            NSLog(@"error : %@", error.description);
+                                            NSMutableDictionary *notificationDict = [NSMutableDictionary new];
+                                            [notificationDict setObject:error forKey:@"error"];
+                                            [[NSNotificationCenter defaultCenter] postNotificationName:notificationName object:notificationDict];
                                         }
                                     }];
     [task resume];
 }
 
-+(void)getDetailsForDiseaseId:(NSString *)diseaseId
++(void)getDetailsForDiseaseId:(NSString *)diseaseId withNotificationName:(NSString *)notificationName
 {
     //Create the URL componenets
     NSURLComponents *components = [NSURLComponents new];
@@ -114,20 +116,22 @@
                                                     
                                                     NSMutableDictionary *notificationDict = [NSMutableDictionary new];
                                                     [notificationDict setObject:diseaseDetail forKey:@"diseaseDetail"];
-                                                    [[NSNotificationCenter defaultCenter] postNotificationName:@"diseaseDetailReceived" object:notificationDict];
+                                                    [[NSNotificationCenter defaultCenter] postNotificationName:notificationName
+                                                                                                        object:notificationDict];
                                                 }
                                             }  else {
                                                 //Web server is returning an error
                                             }
                                         } else {
                                             // Fail
-                                            NSLog(@"error : %@", error.description);
-                                        }
+                                            NSMutableDictionary *notificationDict = [NSMutableDictionary new];
+                                            [notificationDict setObject:error forKey:@"error"];
+                                            [[NSNotificationCenter defaultCenter] postNotificationName:notificationName object:notificationDict];                                        }
                                     }];
     [task resume];
 }
 
-+(void)searchMedicalTrial:(NSString *)trialName
++(void)searchMedicalTrial:(NSString *)trialName withNotificationName:(NSString *)notificationName
 {
     //Create the URL componenets
     NSURLComponents *components = [NSURLComponents new];
@@ -166,20 +170,21 @@
                                                     }
                                                     NSMutableDictionary *notificationDict = [NSMutableDictionary new];
                                                     [notificationDict setObject:trials forKey:@"trials"];
-                                                    [[NSNotificationCenter defaultCenter] postNotificationName:@"trialsReceived" object:notificationDict];
+                                                    [[NSNotificationCenter defaultCenter] postNotificationName:notificationName object:notificationDict];
                                                 }
                                             }  else {
                                                 //Web server is returning an error
                                             }
                                         } else {
                                             // Fail
-                                            NSLog(@"error : %@", error.description);
-                                        }
+                                            NSMutableDictionary *notificationDict = [NSMutableDictionary new];
+                                            [notificationDict setObject:error forKey:@"error"];
+                                            [[NSNotificationCenter defaultCenter] postNotificationName:notificationName object:notificationDict];                                        }
                                     }];
     [task resume];
 }
 
-+(void)searchMedicalTrialDetail:(NSString *)trialId
++(void)searchMedicalTrialDetail:(NSString *)trialId withNotificationName:(NSString *)notificationName
 {
     //Create the URL componenets
     NSURLComponents *components = [NSURLComponents new];
@@ -236,15 +241,16 @@
                                                     }
                                                     NSMutableDictionary *notificationDict = [NSMutableDictionary new];
                                                     [notificationDict setObject:detail forKey:@"detail"];
-                                                    [[NSNotificationCenter defaultCenter] postNotificationName:@"trialDetailReceived" object:notificationDict];
+                                                    [[NSNotificationCenter defaultCenter] postNotificationName:notificationName object:notificationDict];
                                                 }
                                             }  else {
                                                 //Web server is returning an error
                                             }
                                         } else {
                                             // Fail
-                                            NSLog(@"error : %@", error.description);
-                                        }
+                                            NSMutableDictionary *notificationDict = [NSMutableDictionary new];
+                                            [notificationDict setObject:error forKey:@"error"];
+                                            [[NSNotificationCenter defaultCenter] postNotificationName:notificationName object:notificationDict];                                        }
                                     }];
     [task resume];
 }

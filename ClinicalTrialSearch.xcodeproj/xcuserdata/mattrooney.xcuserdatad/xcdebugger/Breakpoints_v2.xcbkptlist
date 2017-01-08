@@ -20,12 +20,44 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ClinicalTrialSearch/HTTP/HTTPHelper.m"
-            timestampString = "505578547.955258"
+            timestampString = "505588783.998068"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "229"
-            endingLineNumber = "229"
-            landmarkName = "+searchMedicalTrialDetail:"
+            startingLineNumber = "234"
+            endingLineNumber = "234"
+            landmarkName = "+searchMedicalTrialDetail:withNotificationName:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ClinicalTrialSearch/HTTP/HTTPHelper.m"
+            timestampString = "505588783.998068"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "203"
+            endingLineNumber = "203"
+            landmarkName = "+searchMedicalTrialDetail:withNotificationName:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ClinicalTrialSearch/Controllers/MedicalTrialDetailViewController.m"
+            timestampString = "505589383.795807"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
+            landmarkName = "-trialDetailReceived:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

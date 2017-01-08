@@ -25,13 +25,13 @@
 -(void)viewWillAppear:(BOOL)animated
 {
     if(!_disease.detail.diseaseDescription && _disease.detail.diseaseDescription.length==0){
-        [HTTPHelper getDetailsForDiseaseId:_disease.id];
+        [HTTPHelper getDetailsForDiseaseId:_disease.id withNotificationName:@"diseaseDetailReceived"];
         [_spinner startAnimating];
         _spinner.hidden = NO;
     } else {
         [_spinner stopAnimating];
         _spinner.hidden = YES;
-        [self setTextViewTextAndStopLoading:_disease.detail.diseaseDescription];
+        [self setTextViewText:_disease.detail.diseaseDescription];
     }
 }
 
@@ -43,18 +43,33 @@
 -(void)diseaseDetailReceived:(NSNotification *)notif
 {
     dispatch_async (dispatch_get_main_queue(), ^{
-        NSMutableDictionary *dict = [NSMutableDictionary new];
-        dict = notif.object;
-        _disease.detail = [DiseaseDetail new];
-        _disease.detail = [dict objectForKey:@"diseaseDetail"];
-        [self setTextViewTextAndStopLoading:_disease.detail.diseaseDescription];
+        
+        [_spinner stopAnimating];
+        _spinner.hidden = YES;
+        
+        NSError *error;
+        if((error = (NSError *)[notif.object objectForKey:@"error"])){
+
+            UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Error"
+                                                                           message:[error.userInfo objectForKey:@"NSLocalizedDescription"]
+                                                                    preferredStyle:UIAlertControllerStyleAlert];
+            
+            UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault
+                                                                  handler:^(UIAlertAction * action) {
+                                                                      [self.navigationController popViewControllerAnimated:YES];
+                                                                  }];
+            
+            [alert addAction:defaultAction];
+            [self presentViewController:alert animated:YES completion:nil];
+        } else {
+            _disease.detail = [DiseaseDetail new];
+            _disease.detail = [notif.object objectForKey:@"diseaseDetail"];
+            [self setTextViewText:_disease.detail.diseaseDescription];
+        }
     });
 }
 
--(void)setTextViewTextAndStopLoading:(NSString *)text {
-    
-    [_spinner stopAnimating];
-    _spinner.hidden = YES;
+-(void)setTextViewText:(NSString *)text {
     
     NSMutableAttributedString *detailText = [MedicalTrialDetailViewController convertHTMLToAtrributedString:text];
     _textView.attributedText = detailText;
