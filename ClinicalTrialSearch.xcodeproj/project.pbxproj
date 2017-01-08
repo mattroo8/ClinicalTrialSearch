@@ -59,8 +59,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		282905FF1E1D9BA600C3A43E /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
-		282906001E1D9BA600C3A43E /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
+		282905FF1E1D9BA600C3A43E /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AboutViewController.h; path = Controllers/AboutViewController.h; sourceTree = "<group>"; };
+		282906001E1D9BA600C3A43E /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AboutViewController.m; path = Controllers/AboutViewController.m; sourceTree = "<group>"; };
 		282906011E1D9BA600C3A43E /* AboutViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutViewController.xib; sourceTree = "<group>"; };
 		28724FD51E1079D100496506 /* ClinicalTrialSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClinicalTrialSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28724FD91E1079D100496506 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -215,6 +215,7 @@
 		287250171E10981500496506 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				282906011E1D9BA600C3A43E /* AboutViewController.xib */,
 				287250391E1162C000496506 /* MedicalTrialDetailViewController.xib */,
 				2872501C1E1099C300496506 /* DiseaseDetailViewController.xib */,
 				287250621E17179F00496506 /* SideMenuViewController.xib */,
@@ -256,7 +257,6 @@
 			children = (
 				282905FF1E1D9BA600C3A43E /* AboutViewController.h */,
 				282906001E1D9BA600C3A43E /* AboutViewController.m */,
-				282906011E1D9BA600C3A43E /* AboutViewController.xib */,
 				2872505F1E17179300496506 /* SideMenuViewController.h */,
 				287250601E17179300496506 /* SideMenuViewController.m */,
 				2872501F1E10A22200496506 /* DiseaseDetailViewController.h */,
