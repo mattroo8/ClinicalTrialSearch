@@ -14,4 +14,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 @property (strong, nonatomic) MedicalTrial *trial;
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *spinner;
+
++(NSMutableAttributedString *)convertHTMLToAtrributedString:(NSString *)HTML;
+
 @end

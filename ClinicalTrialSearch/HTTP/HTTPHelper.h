@@ -1,5 +1,5 @@
 //
-//  HTTPSearchDiseases.h
+//  HTTPHelper.h
 //  ClinicalTrialSearch
 //
 //  Created by matt rooney on 25/12/2016.
@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface HTTPSearchDiseases : NSObject <NSURLConnectionDelegate>
+@interface HTTPHelper : NSObject <NSURLConnectionDelegate>
 
 +(void)searchForDisease:(NSString *)diseaseName;
 +(void)getDetailsForDiseaseId:(NSString *)diseaseId;

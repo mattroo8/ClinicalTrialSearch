@@ -15,5 +15,6 @@
 @property (strong, nonatomic) NSString *summary;
 @property (strong, nonatomic) NSString *desc;
 @property (strong, nonatomic) NSMutableArray *outcomes;
+@property (strong, nonatomic) NSMutableArray *registries;
 
 @end

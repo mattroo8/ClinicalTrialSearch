@@ -1,19 +1,21 @@
 //
-//  HTTPSearchDiseases.m
+//  HTTPHelper.m
 //  ClinicalTrialSearch
 //
 //  Created by matt rooney on 25/12/2016.
 //  Copyright © 2016 matt rooney. All rights reserved.
 //
 
-#import "HTTPSearchDiseases.h"
+#import "HTTPHelper.h"
 #import "Disease.h"
 #import "DiseaseDetail.h"
 #import "Mesh.h"
 #import "MedicalTrial.h"
 #import "MedicalTrialOutcome.h"
+#import "Registry.h"
 
-@implementation HTTPSearchDiseases
+
+@implementation HTTPHelper
 
 +(void)searchForDisease:(NSString *)diseaseName
 {
@@ -221,6 +223,16 @@
                                                         outcome.outcomeType = [outcomeDict objectForKey:@"outcome_type"];
                                                         outcome.timeFrame = [outcomeDict objectForKey:@"time_frame"];
                                                         [detail.outcomes addObject:outcome];
+                                                    }
+                                                    detail.registries = [NSMutableArray new];
+                                                    for(NSDictionary *registryDict in [diseasesResponse objectForKey:@"registries"]){
+                                                        Registry *registry = [Registry new];
+                                                        registry.identifier = [registryDict objectForKey:@"id"];
+                                                        registry.name = [registryDict objectForKey:@"name"];
+                                                        registry.url = [registryDict objectForKey:@"url"];
+                                                        registry.attribution = [registryDict objectForKey:@"attribution"];
+                                                        registry.modified_at = [registryDict objectForKey:@"modified_at"];
+                                                        [detail.registries addObject:registry];
                                                     }
                                                     NSMutableDictionary *notificationDict = [NSMutableDictionary new];
                                                     [notificationDict setObject:detail forKey:@"detail"];

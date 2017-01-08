@@ -7,7 +7,7 @@
 //
 
 #import "SearchViewController.h"
-#import "HTTPSearchDiseases.h"
+#import "HTTPHelper.h"
 #import "Disease.h"
 #import "DiseaseDetailViewController.h"
 #import "MedicalTrial.h"
@@ -133,12 +133,12 @@
 
 -(void)searchDisease:(NSTimer *)timer
 {
-    [HTTPSearchDiseases searchForDisease:timer.userInfo];
+    [HTTPHelper searchForDisease:timer.userInfo];
 }
 
 -(void)searchMedicalTrial:(NSTimer *)timer
 {
-    [HTTPSearchDiseases searchMedicalTrial:timer.userInfo];
+    [HTTPHelper searchMedicalTrial:timer.userInfo];
 }
 
 -(void)diseasesReceieved:(NSNotification *)notification

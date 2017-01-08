@@ -7,7 +7,8 @@
 //
 
 #import "DiseaseDetailViewController.h"
-#import "HTTPSearchDiseases.h"
+#import "HTTPHelper.h"
+#import "MedicalTrialDetailViewController.h"
 
 @interface DiseaseDetailViewController ()
 
@@ -24,7 +25,7 @@
 -(void)viewWillAppear:(BOOL)animated
 {
     if(!_disease.detail.diseaseDescription && _disease.detail.diseaseDescription.length==0){
-        [HTTPSearchDiseases getDetailsForDiseaseId:_disease.id];
+        [HTTPHelper getDetailsForDiseaseId:_disease.id];
         [_spinner startAnimating];
         _spinner.hidden = NO;
     }
@@ -47,10 +48,12 @@
 }
 
 -(void)setTextViewTextAndStopLoading:(NSString *)text {
-    [_textView setValue:text forKey:@"contentToHTMLString"];
-    _textView.font = [UIFont fontWithName:@"vardana" size:100.0];
+    
     [_spinner stopAnimating];
     _spinner.hidden = YES;
+    
+    NSMutableAttributedString *detailText = [MedicalTrialDetailViewController convertHTMLToAtrributedString:text];
+    _textView.attributedText = detailText;
 }
 
 @end
