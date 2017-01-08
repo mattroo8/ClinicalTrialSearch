@@ -28,6 +28,10 @@
         [HTTPHelper getDetailsForDiseaseId:_disease.id];
         [_spinner startAnimating];
         _spinner.hidden = NO;
+    } else {
+        [_spinner stopAnimating];
+        _spinner.hidden = YES;
+        [self setTextViewTextAndStopLoading:_disease.detail.diseaseDescription];
     }
 }
 
