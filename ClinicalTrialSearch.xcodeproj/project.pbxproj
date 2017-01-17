@@ -362,7 +362,7 @@
 				TargetAttributes = {
 					28724FD41E1079D100496506 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 3VA9LD8KWM;
+						DevelopmentTeam = 7H3JB6GXN5;
 						ProvisioningStyle = Automatic;
 					};
 					28724FED1E1079D200496506 = {
@@ -595,11 +595,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 3VA9LD8KWM;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 7H3JB6GXN5;
 				INFOPLIST_FILE = ClinicalTrialSearch/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.mroodev.ClinicalTrialSearch;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mroodev.CliniSearch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -608,11 +609,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 3VA9LD8KWM;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 7H3JB6GXN5;
 				INFOPLIST_FILE = ClinicalTrialSearch/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.mroodev.ClinicalTrialSearch;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mroodev.CliniSearch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
