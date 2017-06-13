@@ -139,13 +139,16 @@
 
 +(NSMutableAttributedString *)convertHTMLToAtrributedString:(NSString *)HTML
 {
-    NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc]
-                                            initWithData: [HTML dataUsingEncoding:NSUnicodeStringEncoding]
-                                            options: @{ NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType }
-                                            documentAttributes: nil
-                                            error: nil
-                                            ];
-    [attributedString addAttributes:@{NSFontAttributeName: [UIFont systemFontOfSize:12]} range:NSMakeRange(0, attributedString.length)];
+    NSMutableAttributedString *attributedString = [NSMutableAttributedString new];
+    if([HTML class] != [NSNull class]){
+        attributedString = [[NSMutableAttributedString alloc]
+                                                       initWithData: [HTML dataUsingEncoding:NSUnicodeStringEncoding]
+                                                       options: @{ NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType }
+                                                       documentAttributes: nil
+                                                       error: nil
+                                                       ];
+        [attributedString addAttributes:@{NSFontAttributeName: [UIFont systemFontOfSize:12]} range:NSMakeRange(0, attributedString.length)];
+    }
     return attributedString;
 }
 

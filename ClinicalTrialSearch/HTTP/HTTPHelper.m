@@ -17,12 +17,15 @@
 
 @implementation HTTPHelper
 
+NSString *const protocol = @"https";
+NSString *const host = @"api.mytomorrows.com";
+
 +(void)searchForDisease:(NSString *)diseaseName withNotificationName:(NSString *)notificationName
 {
     //Create the URL componenets
     NSURLComponents *components = [NSURLComponents new];
-    [components setScheme:@"https"];
-    [components setHost:@"ws.mytomorrows.com"];
+    [components setScheme:protocol];
+    [components setHost:host];
     [components setQuery:[NSString stringWithFormat:@"q=%@", diseaseName]];
     [components setPath:@"/api/v1/diseases/autocomplete"];
     
@@ -79,8 +82,8 @@
 {
     //Create the URL componenets
     NSURLComponents *components = [NSURLComponents new];
-    [components setScheme:@"https"];
-    [components setHost:@"ws.mytomorrows.com"];
+    [components setScheme:protocol];
+    [components setHost:host];
     [components setPath:[NSString stringWithFormat:@"/api/v1/diseases/%@", diseaseId]];
     
     // Create the request.
@@ -135,8 +138,8 @@
 {
     //Create the URL componenets
     NSURLComponents *components = [NSURLComponents new];
-    [components setScheme:@"https"];
-    [components setHost:@"ws.mytomorrows.com"];
+    [components setScheme:protocol];
+    [components setHost:host];
     [components setQuery:[NSString stringWithFormat:@"query=%@", trialName]];
     [components setPath:@"/api/v1/medical_trials"];
     
@@ -188,8 +191,8 @@
 {
     //Create the URL componenets
     NSURLComponents *components = [NSURLComponents new];
-    [components setScheme:@"https"];
-    [components setHost:@"ws.mytomorrows.com"];
+    [components setScheme:protocol];
+    [components setHost:host];
     [components setPath:[NSString stringWithFormat:@"/api/v1/medical_trials/%@", trialId]];
     
     // Create the request.
@@ -223,7 +226,9 @@
                                                         MedicalTrialOutcome *outcome = [MedicalTrialOutcome new];
                                                         outcome.desc = [outcomeDict objectForKey:@"description"];
                                                         NSString *safetyIssueString = [outcomeDict objectForKey:@"safety_issue"];
-                                                        outcome.safetyIssue = safetyIssueString ? [safetyIssueString boolValue] : false;
+                                                        if([safetyIssueString class] != [NSNull class]){
+                                                            outcome.safetyIssue = safetyIssueString ? [safetyIssueString boolValue] : false;
+                                                        }
                                                         outcome.measure = [outcomeDict objectForKey:@"measure"];
                                                         outcome.outcomeType = [outcomeDict objectForKey:@"outcome_type"];
                                                         outcome.timeFrame = [outcomeDict objectForKey:@"time_frame"];
